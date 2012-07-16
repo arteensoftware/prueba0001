@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.x-list-normal .x-list-header{
+background-color: #5ab5f5;
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3ecfa), color-stop(2%, #d9cfe6), color-stop(100%, #c2b5d5));
+background-image: -webkit-linear-gradient(#f3ecfa, #d9cfe6 2%, #c2b5d5);
+background-image: linear-gradient(#f3ecfa, #d9cfe6 2%, #c2b5d5);
+color: #420e6c;
+border-top: 1px solid #541885;
+border-bottom: 1px solid #946eb4;
+padding:0.6em .3em .3em .4em;
+font-weight:normal;
+}
+.x-indexbar > div {
+  color: #000;
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 1.6em;
+  font-weight: bold;
+  display: block;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+}
+.x-list .x-list-item .x-list-item-label{
+	padding:.95em 0.35em .5em .5em
+}
+.x-list .x-list-item.x-item-selected .x-list-item-label {
+  background-color: #006bb6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a877d1), color-stop(2%, #8249b2), color-stop(100%, #541885));
+  background-image: -webkit-linear-gradient(#a877d1, #8249b2 2%, #541885);
+  background-image: linear-gradient(#a877d1, #8249b2 2%, #541885);
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0;
+  border-top:1px solid #f4ecfa;
+}
+.x-list-normal .x-list-item .x-list-item-label{
+	padding-right:1px solid #f4ecfa;
+}
+#glosarioDescripcion{
+	padding:20px;
+	background:#FFF;/*#eee7f3;*/
+	font-size:1em;
+	line-height:1.4em;
+	width:100%;
+	margin-left:4px;
+}
+#panelGlosario_21{
+	/*background:#eee7f3;*/
+}
+.tituloGlosario{
+	 font-family: 'GillSansHeavy';
+	 color:#541885;
+	 font-size:1.25em;
+	 width:100%;
+}
+.x-scroll-view{
+	border-right: 1px solid #CCCCCC;
+	padding-right:5px;
+}

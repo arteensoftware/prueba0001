@@ -1,0 +1,1695 @@
+﻿<!DOCTYPE HTML>
+<html manifest="" lang="en-US"><head>
+    <meta charset="UTF-8">
+    <title>Catálogo Benq</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width">
+
+    <script type="text/javascript" src="../NKit.js"></script>
+	<script id="config" type="text/javascript" src="config.js"></script>
+	<script type="text/javascript">
+		document.write('<scri'+'pt ');
+		document.write('   type="text/javascript" ');
+		document.write('   src="bd.js?'+new Date().getTime()+'">');
+		document.write('</scri'+'pt>');
+	</script>
+	<script type="text/javascript">
+		document.write('<scri'+'pt ');
+		document.write('   type="text/javascript" ');
+		document.write('   src="../../Documents/bd.js?'+new Date().getTime()+'">');
+		document.write('</scri'+'pt>');
+	</script>
+
+    <script id="microloader" type="text/javascript" src="sdk/microloader/development.js"></script>
+   	
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo_640.css" rel="stylesheet" type="text/css">
+    <link href="css/sencha-touch-benq.css" rel="stylesheet" type="text/css">
+    <link href="css/glosario.css" rel="stylesheet" type="text/css">
+<STYLE type="text/css">
+	/*NAVEGACIÓN inferior*/
+.css_btn_atras {
+background: url(imgs/tablet/btn_atras.png) !important;
+}
+.css_btn_home {
+background: url(imgs/tablet/btn_home.png) !important;
+}
+.css_btn_guardar {
+background: url(imgs/tablet/iconografia_catalogo/btn_guardar.png) !important;
+}
+.css_btn_enviar {
+background: url(imgs/tablet/iconografia_catalogo/btn_enviar.png) !important;
+}
+.css_btn_ayuda {
+background: url(imgs/tablet/btn_ayuda.png) !important;
+}
+.css_menu_iphone_1 {
+background: url(imgs/iphone/catalogo_productos.png) !important;
+-webkit-background-size:100%; 
+-moz-background-size:100%; 
+background-size:100%;
+}
+.css_menu_iphone_2 {
+background: url(imgs/iphone/herramientas.png) !important;
+-webkit-background-size:100%; 
+-moz-background-size:100%; 
+background-size:100%;
+}
+.css_menu_iphone_3 {
+background: url(imgs/iphone/noticias.png) !important;
+-webkit-background-size:100%; 
+-moz-background-size:100%; 
+background-size:100%;
+}
+.css_menu_iphone_4 {
+background: url(imgs/iphone/glosario.png) !important;
+-webkit-background-size:100%; 
+-moz-background-size:100%; 
+background-size:100%;
+}
+.css_menu_iphone_5 {
+background: url(imgs/iphone/tips.png) !important;
+-webkit-background-size:100%; 
+-moz-background-size:100%; 
+background-size:100%;
+}
+.css_menu_tablet_1 {
+background: url(imgs/tablet/catalogo_productos.png) !important;
+}
+.css_menu_tablet_2 {
+background: url(imgs/tablet/herramientas.png) !important;
+}
+.css_menu_tablet_3 {
+background: url(imgs/tablet/noticias.png) !important;
+}
+.css_menu_tablet_4 {
+background: url(imgs/tablet/glosario.png) !important;
+}
+.css_menu_tablet_5 {
+background: url(imgs/tablet/tips.png) !important;
+}
+
+
+.css_menu_iphone_1_1 {
+background: url(imgs/iphone/proyectores.png) !important;
+}
+.css_menu_iphone_1_2 {
+background: url(imgs/iphone/monitores.png) !important;
+}
+.css_menu_iphone_1_3 {
+background: url(imgs/iphone/camaras_fotograficas.png) !important;
+}
+.css_menu_iphone_1_4 {
+background: url(imgs/iphone/camaras_video.png) !important;
+}
+.css_menu_iphone_1_5 {
+background: url(imgs/iphone/productos_eco.png) !important;
+}
+.css_menu_iphone_2_1 {
+background: url(imgs/iphone/proyectores.png) !important;
+}
+.css_menu_iphone_2_2 {
+background: url(imgs/iphone/monitores.png) !important;
+}
+.css_menu_iphone_2_3 {
+background: url(imgs/iphone/camaras_fotograficas.png) !important;
+}
+
+.css_menu_tablet_1_1 {
+background: url(imgs/tablet/proyectores.png) !important;
+}
+.css_menu_tablet_1_2 {
+background: url(imgs/tablet/monitores.png) !important;
+}
+.css_menu_tablet_1_3 {
+background: url(imgs/tablet/camaras_fotograficas.png) !important;
+}
+.css_menu_tablet_1_4 {
+background: url(imgs/tablet/camaras_video.png) !important;
+}
+.css_menu_tablet_1_5 {
+background: url(imgs/tablet/productos_eco.png) !important;
+}
+.css_menu_tablet_2_1 {
+background: url(imgs/tablet/proyectores.png) !important;
+}
+.css_menu_tablet_2_2 {
+background: url(imgs/tablet/monitores.png) !important;
+}
+.css_menu_tablet_2_3 {
+background: url(imgs/tablet/camaras_fotograficas.png) !important;
+}
+</STYLE>
+ 
+</head>
+<body>
+
+<div id="contenedor_1" class="contenedor" style="display: none;" >
+    		<div id="columna_1">
+                <div class="header">
+                    	<img src="imgs/iphone/logo.png" alt="Logotipo Benq" class="f_left"/>
+                        <h1 class="f_left">Registro</h1>
+                        <div class="clear"></div>  
+            </div>
+                <table class="registro_inicial">
+                      <tr>
+                        	<td><img src="imgs/tablet/flecha.png" alt="Flecha">¿Estás Registrado?</td>
+                      </tr>                  
+                      <tr>
+                        	<td align="left" >
+								<input type="Radio" name="paso0" value="1" onClick="paso2(1)" class="label_estructura">Sí
+								<input type="Radio" name="paso0" value="2" onClick="paso2(2)" class="label_estructura">No
+							</td>
+                      </tr>
+					   <tr>
+                        	<td align="left">
+								<div id="paso2" class="boton_skin"></div>
+							</td>
+                      </tr>
+					   <tr>
+                        	<td align="left" class="label_estructura">
+								<div id="paso3" class="boton_skin"></div>
+							</td>
+                      </tr>
+                </table>
+                <div class="clear"></div>
+    		</div>
+			<div id="mapa_1" ></div>
+    		</div>
+		<div class="clear"></div>
+</div>
+<div id="contenedor_2" style="display: none;" class="contenedor">
+	<form name="registroDistribuidor">
+            <div class="header">
+                    	<img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Registro</h1>
+                        <div class="clear"></div>  
+            </div>
+            <div class="caja">
+            		<div class="titulo"><h2>Distribuidor</h2></div>
+                    <div class="capa_sala absolute"><img src="imgs/tablet/sala_juntas.png" alt="Sala de juntas"></div>
+            		<div class="formulario box_p_25">
+                    		<fieldset class="razon_social clear label_text boton_skin medium">	
+                                <label>Razón Social<input name="rfc" type="text" class="input_box"></label><br>
+                                <label>Cargar Logo <span class="anotacion_1">(Que no exceda 1MB)</span>
+                                        <input name="imagen" type="button" value="Examinar" id="examinar" class="input_box">
+                                </label>
+								<input name="" type="text"  class="label_box">
+                            </fieldset>
+                            <fieldset class="label_text m_b_10 boton_skin">
+                            	<legend>Dirección </legend>
+                                <label>Calle<input name="calle" type="text"  class="input_box"/></label>
+                                <label>Número<input name="num" type="text" class="input_box"/></label><br>
+                                <label>Colonia<input name="col" type="text" class="input_box"/></label>
+                                <label>Delegación o Municipio<input name="del" type="text" class="input_box"/></label><br>
+                                <label>C.P.<input name="cp" type="text" class="input_box"/></label>
+                                <label>Estado<input name="edo" type="text" class="input_box"/></label>
+                                <label>País * <select name="pais"><option value="" selected>Seleccione un país</option>
+								<option value="AF">Afganistán</option><option value="AL">Albania</option><option value="DE">Alemania</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antártida</option><option value="AG">Antigua y Barbuda</option><option value="AN">Antillas Holandesas</option><option value="SA">Arabia Saudí</option><option value="DZ">Argelia</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaiyán</option><option value="BS">Bahamas</option><option value="BH">Bahrein</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BE">Bélgica</option><option value="BZ">Belice</option><option value="BJ">Benin</option><option value="BM">Bermudas</option><option value="BY">Bielorrusia</option><option value="MM">Birmania</option><option value="BO">Bolivia</option><option value="BA">Bosnia y Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brasil</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="BT">Bután</option><option value="CV">Cabo Verde</option><option value="KH">Camboya</option><option value="CM">Camerún</option><option value="CA">Canadá</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CY">Chipre</option><option value="VA">Ciudad del Vaticano (Santa Sede)</option><option value="CO">Colombia</option><option value="KM">Comores</option><option value="CG">Congo</option><option value="CD">Congo, República Democrática del</option><option value="KR">Corea</option><option value="KP">Corea del Norte</option><option value="CI">Costa de Marfíl</option><option value="CR">Costa Rica</option><option value="HR">Croacia (Hrvatska)</option><option value="CU">Cuba</option><option value="DK">Dinamarca</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="EC">Ecuador</option><option value="EG">Egipto</option><option value="SV">El Salvador</option><option value="AE">Emiratos Árabes Unidos</option><option value="ER">Eritrea</option><option value="SI">Eslovenia</option><option value="ES">España</option><option value="US">Estados Unidos</option><option value="EE">Estonia</option><option value="ET">Etiopía</option><option value="FJ">Fiji</option><option value="PH">Filipinas</option><option value="FI">Finlandia</option><option value="FR">Francia</option><option value="GA">Gabón</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GD">Granada</option><option value="GR">Grecia</option><option value="GL">Groenlandia</option><option value="GP">Guadalupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GY">Guayana</option><option value="GF">Guayana Francesa</option><option value="GN">Guinea</option><option value="GQ">Guinea Ecuatorial</option><option value="GW">Guinea-Bissau</option><option value="HT">Haití</option><option value="HN">Honduras</option><option value="HU">Hungría</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IQ">Irak</option><option value="IR">Irán</option><option value="IE">Irlanda</option><option value="BV">Isla Bouvet</option><option value="CX">Isla de Christmas</option><option value="IS">Islandia</option><option value="KY">Islas Caimán</option><option value="CK">Islas Cook</option><option value="CC">Islas de Cocos o Keeling</option><option value="FO">Islas Faroe</option><option value="HM">Islas Heard y McDonald</option><option value="FK">Islas Malvinas</option><option value="MP">Islas Marianas del Norte</option><option value="MH">Islas Marshall</option><option value="UM">Islas menores de Estados Unidos</option><option value="PW">Islas Palau</option><option value="SB">Islas Salomón</option><option value="SJ">Islas Svalbard y Jan Mayen</option><option value="TK">Islas Tokelau</option><option value="TC">Islas Turks y Caicos</option><option value="VI">Islas Vírgenes (EE.UU.)</option><option value="VG">Islas Vírgenes (Reino Unido)</option><option value="WF">Islas Wallis y Futuna</option><option value="IL">Israel</option><option value="IT">Italia</option><option value="JM">Jamaica</option><option value="JP">Japón</option><option value="JO">Jordania</option><option value="KZ">Kazajistán</option><option value="KE">Kenia</option><option value="KG">Kirguizistán</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="LA">Laos</option><option value="LS">Lesotho</option><option value="LV">Letonia</option><option value="LB">Líbano</option><option value="LR">Liberia</option><option value="LY">Libia</option><option value="LI">Liechtenstein</option><option value="LT">Lituania</option><option value="LU">Luxemburgo</option><option value="MK">Macedonia, Ex-República Yugoslava de</option><option value="MG">Madagascar</option><option value="MY">Malasia</option><option value="MW">Malawi</option><option value="MV">Maldivas</option><option value="ML">Malí</option><option value="MT">Malta</option><option value="MA">Marruecos</option><option value="MQ">Martinica</option><option value="MU">Mauricio</option><option value="MR">Mauritania</option><option value="YT">Mayotte</option><option value="MX">México</option><option value="FM">Micronesia</option><option value="MD">Moldavia</option><option value="MC">Mónaco</option><option value="MN">Mongolia</option><option value="MS">Montserrat</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NI">Nicaragua</option><option value="NE">Níger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk</option><option value="NO">Noruega</option><option value="NC">Nueva Caledonia</option><option value="NZ">Nueva Zelanda</option><option value="OM">Omán</option><option value="NL">Países Bajos</option><option value="PA">Panamá</option><option value="PG">Papúa Nueva Guinea</option><option value="PK">Paquistán</option><option value="PY">Paraguay</option><option value="PE">Perú</option><option value="PN">Pitcairn</option><option value="PF">Polinesia Francesa</option><option value="PL">Polonia</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="UK">Reino Unido</option><option value="CF">República Centroafricana</option><option value="CZ">República Checa</option><option value="ZA">República de Sudáfrica</option><option value="DO">República Dominicana</option><option value="SK">República Eslovaca</option><option value="RE">Reunión</option><option value="RW">Ruanda</option><option value="RO">Rumania</option><option value="RU">Rusia</option><option value="EH">Sahara Occidental</option><option value="KN">Saint Kitts y Nevis</option><option value="WS">Samoa</option><option value="AS">Samoa Americana</option><option value="SM">San Marino</option><option value="VC">San Vicente y Granadinas</option><option value="SH">Santa Helena</option><option value="LC">Santa Lucía</option><option value="ST">Santo Tomé y Príncipe</option><option value="SN">Senegal</option><option value="SC">Seychelles</option><option value="SL">Sierra Leona</option><option value="SG">Singapur</option><option value="SY">Siria</option><option value="SO">Somalia</option><option value="LK">Sri Lanka</option><option value="PM">St. Pierre y Miquelon</option><option value="SZ">Suazilandia</option><option value="SD">Sudán</option><option value="SE">Suecia</option><option value="CH">Suiza</option><option value="SR">Surinam</option><option value="TH">Tailandia</option><option value="TW">Taiwán</option><option value="TZ">Tanzania</option><option value="TJ">Tayikistán</option><option value="TF">Territorios franceses del Sur</option><option value="TP">Timor Oriental</option><option value="TG">Togo</option><option value="TO">Tonga</option><option value="TT">Trinidad y Tobago</option><option value="TN">Túnez</option><option value="TM">Turkmenistán</option><option value="TR">Turquía</option><option value="TV">Tuvalu</option><option value="UA">Ucrania</option><option value="UG">Uganda</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistán</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="YE">Yemen</option><option value="YU">Yugoslavia</option><option value="ZM">Zambia</option><option value="ZW">Zimbabue</option> 
+								</select></label><br>
+                                <label>Mayorista al que le compra<input name="may" type="text" class="input_box"/></label><br>
+                                <label>Nombre Contacto<input name="contac" type="text" class="input_box"/></label><br>
+                                <label>Email *<input name="email" type="text" class="input_box"/></label><br>
+                                <input onclick="JavaScript:sendForm('registroDistribuidor');" name="tipo" type="button" value="Registrar" class="boton_skin m_t_15">
+                            </fieldset>
+                            <p class="anotacion_1">* Campos obligatorios</p>
+                            <div class="clear"></div>  
+                    </div>
+                    <div class="clear"></div>  
+            </div>
+   			<div class="clear"></div>
+	</form>
+</div>
+<div id="contenedor_3" style="display: none;" class="contenedor">
+		<form name="registroUsuario">
+            <div class="header">
+                    	<img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Registro</h1>
+                        <div class="clear"></div>  
+            </div>
+            <div class="caja">
+            		<div class="titulo"><h2>Usuario final</h2></div>
+                    <div class="capa_sala absolute"><img src="imgs/tablet/sala_juntas.png" alt="Sala de juntas"></div>
+            		<div class="formulario boton_skin box_p_25">
+                            <fieldset class="label_text_1 m_b_10">
+                            	<label>Nombre<input name="nom" type="text" class="input_box"/></label><br>
+                                <label>Apellido paterno<input name="app" type="text" class="input_box"/></label><br>
+                                <label>Apellido materno<input name="apm" type="text" class="input_box"/></label><br>
+                                <label>País * <select name="pais"><option value="" selected>Seleccione un país</option>
+								<option value="AF">Afganistán</option><option value="AL">Albania</option><option value="DE">Alemania</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antártida</option><option value="AG">Antigua y Barbuda</option><option value="AN">Antillas Holandesas</option><option value="SA">Arabia Saudí</option><option value="DZ">Argelia</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaiyán</option><option value="BS">Bahamas</option><option value="BH">Bahrein</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BE">Bélgica</option><option value="BZ">Belice</option><option value="BJ">Benin</option><option value="BM">Bermudas</option><option value="BY">Bielorrusia</option><option value="MM">Birmania</option><option value="BO">Bolivia</option><option value="BA">Bosnia y Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brasil</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="BT">Bután</option><option value="CV">Cabo Verde</option><option value="KH">Camboya</option><option value="CM">Camerún</option><option value="CA">Canadá</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CY">Chipre</option><option value="VA">Ciudad del Vaticano (Santa Sede)</option><option value="CO">Colombia</option><option value="KM">Comores</option><option value="CG">Congo</option><option value="CD">Congo, República Democrática del</option><option value="KR">Corea</option><option value="KP">Corea del Norte</option><option value="CI">Costa de Marfíl</option><option value="CR">Costa Rica</option><option value="HR">Croacia (Hrvatska)</option><option value="CU">Cuba</option><option value="DK">Dinamarca</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="EC">Ecuador</option><option value="EG">Egipto</option><option value="SV">El Salvador</option><option value="AE">Emiratos Árabes Unidos</option><option value="ER">Eritrea</option><option value="SI">Eslovenia</option><option value="ES">España</option><option value="US">Estados Unidos</option><option value="EE">Estonia</option><option value="ET">Etiopía</option><option value="FJ">Fiji</option><option value="PH">Filipinas</option><option value="FI">Finlandia</option><option value="FR">Francia</option><option value="GA">Gabón</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GD">Granada</option><option value="GR">Grecia</option><option value="GL">Groenlandia</option><option value="GP">Guadalupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GY">Guayana</option><option value="GF">Guayana Francesa</option><option value="GN">Guinea</option><option value="GQ">Guinea Ecuatorial</option><option value="GW">Guinea-Bissau</option><option value="HT">Haití</option><option value="HN">Honduras</option><option value="HU">Hungría</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IQ">Irak</option><option value="IR">Irán</option><option value="IE">Irlanda</option><option value="BV">Isla Bouvet</option><option value="CX">Isla de Christmas</option><option value="IS">Islandia</option><option value="KY">Islas Caimán</option><option value="CK">Islas Cook</option><option value="CC">Islas de Cocos o Keeling</option><option value="FO">Islas Faroe</option><option value="HM">Islas Heard y McDonald</option><option value="FK">Islas Malvinas</option><option value="MP">Islas Marianas del Norte</option><option value="MH">Islas Marshall</option><option value="UM">Islas menores de Estados Unidos</option><option value="PW">Islas Palau</option><option value="SB">Islas Salomón</option><option value="SJ">Islas Svalbard y Jan Mayen</option><option value="TK">Islas Tokelau</option><option value="TC">Islas Turks y Caicos</option><option value="VI">Islas Vírgenes (EE.UU.)</option><option value="VG">Islas Vírgenes (Reino Unido)</option><option value="WF">Islas Wallis y Futuna</option><option value="IL">Israel</option><option value="IT">Italia</option><option value="JM">Jamaica</option><option value="JP">Japón</option><option value="JO">Jordania</option><option value="KZ">Kazajistán</option><option value="KE">Kenia</option><option value="KG">Kirguizistán</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="LA">Laos</option><option value="LS">Lesotho</option><option value="LV">Letonia</option><option value="LB">Líbano</option><option value="LR">Liberia</option><option value="LY">Libia</option><option value="LI">Liechtenstein</option><option value="LT">Lituania</option><option value="LU">Luxemburgo</option><option value="MK">Macedonia, Ex-República Yugoslava de</option><option value="MG">Madagascar</option><option value="MY">Malasia</option><option value="MW">Malawi</option><option value="MV">Maldivas</option><option value="ML">Malí</option><option value="MT">Malta</option><option value="MA">Marruecos</option><option value="MQ">Martinica</option><option value="MU">Mauricio</option><option value="MR">Mauritania</option><option value="YT">Mayotte</option><option value="MX">México</option><option value="FM">Micronesia</option><option value="MD">Moldavia</option><option value="MC">Mónaco</option><option value="MN">Mongolia</option><option value="MS">Montserrat</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NI">Nicaragua</option><option value="NE">Níger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk</option><option value="NO">Noruega</option><option value="NC">Nueva Caledonia</option><option value="NZ">Nueva Zelanda</option><option value="OM">Omán</option><option value="NL">Países Bajos</option><option value="PA">Panamá</option><option value="PG">Papúa Nueva Guinea</option><option value="PK">Paquistán</option><option value="PY">Paraguay</option><option value="PE">Perú</option><option value="PN">Pitcairn</option><option value="PF">Polinesia Francesa</option><option value="PL">Polonia</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="UK">Reino Unido</option><option value="CF">República Centroafricana</option><option value="CZ">República Checa</option><option value="ZA">República de Sudáfrica</option><option value="DO">República Dominicana</option><option value="SK">República Eslovaca</option><option value="RE">Reunión</option><option value="RW">Ruanda</option><option value="RO">Rumania</option><option value="RU">Rusia</option><option value="EH">Sahara Occidental</option><option value="KN">Saint Kitts y Nevis</option><option value="WS">Samoa</option><option value="AS">Samoa Americana</option><option value="SM">San Marino</option><option value="VC">San Vicente y Granadinas</option><option value="SH">Santa Helena</option><option value="LC">Santa Lucía</option><option value="ST">Santo Tomé y Príncipe</option><option value="SN">Senegal</option><option value="SC">Seychelles</option><option value="SL">Sierra Leona</option><option value="SG">Singapur</option><option value="SY">Siria</option><option value="SO">Somalia</option><option value="LK">Sri Lanka</option><option value="PM">St. Pierre y Miquelon</option><option value="SZ">Suazilandia</option><option value="SD">Sudán</option><option value="SE">Suecia</option><option value="CH">Suiza</option><option value="SR">Surinam</option><option value="TH">Tailandia</option><option value="TW">Taiwán</option><option value="TZ">Tanzania</option><option value="TJ">Tayikistán</option><option value="TF">Territorios franceses del Sur</option><option value="TP">Timor Oriental</option><option value="TG">Togo</option><option value="TO">Tonga</option><option value="TT">Trinidad y Tobago</option><option value="TN">Túnez</option><option value="TM">Turkmenistán</option><option value="TR">Turquía</option><option value="TV">Tuvalu</option><option value="UA">Ucrania</option><option value="UG">Uganda</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistán</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="YE">Yemen</option><option value="YU">Yugoslavia</option><option value="ZM">Zambia</option><option value="ZW">Zimbabue</option> 
+								</select></label><br>
+                                <label>Estado<input name="edo" type="text" class="input_box"/></label><br>
+                                <label>Email *<input name=mail"" type="text" class="input_box"/></label><br>
+                                <input onclick="JavaScript:sendForm('registroUsuario');" name="tipo" type="button" value="Registrar" class="m_t_15">
+                            </fieldset>
+                            <p class="anotacion_1">* Campos obligatorios / Campos Obrigatórios</p>
+                            <div class="clear"></div>  
+                    </div>
+                    <div class="clear"></div>  
+            </div>
+   			<div class="clear"></div>
+		</form>
+</div>
+<!--Portada de secciones-->
+<div id="contenedor_4" style="display: none;" class="contenedor" >
+			<div class="header">
+                    <img src="imgs/tablet/logo_interior_portada_catalogo.png" alt="Logo Benq" class="f_left"> 
+                    <h1 class="h1_mini">Bringing Enjoyment'N Quality to Life</h1>
+                    <div class="clear"></div>
+            </div>
+            <div class="clear right boton_skin large anotacion_1 m_b_15 m_r_30">
+            		<input onclick="update();" type="button" value="Actualizar ahora" class="m_b_10 f_right" >Última actualización:<div id="lastUpdate" class="f_right">Nunca</div>
+            </div>
+            <div class="portada menu_portada">
+            			<ul>
+                            <li>
+                                <div id="menu_1">
+                                <img src="imgs/iphone/catalogo_productos.png" alt="Catálogo de Productos">
+                                </div>
+                                <div class="boton_menu"><a href="javascript:goto(5);">Catálogo de Productos</a></div>
+                            </li>
+                            <li>
+                                    <div id="menu_2">
+                                    <a href="#"><img src="imgs/iphone/herramientas.png" alt="Herramientas / Ferramentas"></a>
+                                    </div>
+                                    <div class="boton_menu"><a href="javascript:goto(22);">Herramientas</a></div>
+                            </li>
+                                <li>
+                                        <div id="menu_3">
+                                        <a href="#"><img src="imgs/iphone/noticias.png" width="85" height="85" alt="Noticias"></a>
+                                        </div>
+                                        <div class="boton_menu"><a href="javascript:goto(23);">Noticias</a></div>
+                                </li>
+                        </ul>
+                        <ul class="lista_inferior">
+                                <li>
+                                        <div id="menu_4">
+                                         <a href="#"><img src="imgs/iphone/glosario.png" width="85" height="85" alt="Noticias"></a>
+                                         </div>
+                                        <div class="boton_menu"><a href="javascript:goto(21);">Glosario</a></div>
+                                </li>
+                                <li>
+                                        <div id="menu_5">
+                                       <a href="#"><img src="imgs/iphone/tips.png" width="85" height="85" alt="Tips"></a>
+                                        </div>
+                                       <div class="boton_menu"><a href="javascript:goto(24);">Tips</a></div>  
+                                </li>
+                    </ul>
+                 	<div class="clear"></div>
+            </div>
+</div>
+<!--Menú de categorías de productos-->
+<div id="contenedor_5" style="display: none;"  class="contenedor">
+  		<div class="header header_interior">
+                 <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                 <div class="clear"></div>  
+        </div>
+        <div class="contenedor_menu_productos">
+				  <div><a href="javascript:goto(7);">Proyectores DLP&reg;</a><br><div id="menu_1_1" ><img src="imgs/tablet/proyectores.png" alt="Proyectores"></div></div>                  
+                  <div><a href="javascript:goto(10);">Monitores LCD LED</a><br><div id="menu_1_2" ><img src="imgs/tablet/monitores.png" alt="Monitores"></div></div>
+                  <div><a href="javascript:goto(13);">Cámaras Digitales</a><br><div id="menu_1_3" ><img src="imgs/tablet/camaras_fotograficas.png" alt="Cámaras digitales"></div></div>
+                  <div class="lista_inferior"><a href="javascript:goto(16);">Cámaras de Video</a><br><div id="menu_1_4" ><img src="imgs/tablet/camaras_video.png" alt="Proyectores"></div></div>
+				  <div><a href="javascript:goto(26);">Productos <span class="eco">ECO</span></a><br><div id="menu_1_5" ><img src="imgs/tablet/productos_eco.png" alt="Proyectores"></div></div>
+  		</div>
+        <div class="clear"></div>
+</div>
+<div id="contenedor_6" style="display: none;" class="contenedor">
+  		<div class="header header_interior">
+                 <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                 <div class="clear"></div>  
+        </div>
+        <div class="contenedor_menu_productos">
+                  <div><a href="javascript:goto(7);">Proyectores DLP®</a><br><div id="menu_2_1" ><img src="imgs/tablet/proyectores.png" alt="Proyectores"></div></div>
+                  <div><a href="javascript:goto(10);">Monitores LCD LED</a><br><div id="menu_2_2" ><img src="imgs/tablet/monitores.png" alt="Monitores"></div></div>
+                  <div><a href="javascript:goto(13);">Cámaras Digitales</a><br><div id="menu_2_3" ><img src="imgs/tablet/camaras_fotograficas.png" alt="Cámaras digitales"></div></div>
+  		</div>
+        <div class="clear"></div>
+</div>
+<div id="contenedor_7" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Proyectores DLP®</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas f_left">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Modelo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoProyectoresModelo" name="Modelo">                                                            
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Resolución</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                        	<select id="filtradoProyectoresResolucion" name="Resolucion">															
+                                            </select>
+                                       	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Brillo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoProyectoresBrillo" name="Brillo">
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+										
+                                    	<td>Tiro</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoProyectoresTiro" name="Tiro">                                                        
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr>
+                        				<td align="right"  class="boton_skin"><input onclick="JavaScript:gotoFiltradoProyectores();" type="button" value="Ver" ></td>
+                      			</tr>
+                    		</table>
+                    		<div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_proyectores.jpg" alt="Ilustración monitores Benq"></div>
+                   			<div class="clear"></div>  
+              		</div>
+		</div>
+</div>
+<div id="contenedor_8" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Proyectores DLP®</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Modelo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select name="Modelo">          
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Uso</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                        	<select name="Modelo">
+                                            </select>
+                                       	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Brillo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select name="Modelo">
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Espacio</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select name="Modelo">
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr>
+                        				<td align="right"  class="boton_skin"><input type="button" value="Ver" ></td>
+                      			</tr>
+                    </table>
+                    <div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_proyectores.jpg" alt="Ilustración monitores Benq"></div>
+                   	<div class="clear"></div>  
+              </div>
+		</div>
+</div>
+<div id="resultado_9" class="resultado" style="display: none;">
+        <h1>Catálogo de Productos</h1>
+        <div class="clear"></div>  
+</div>
+
+<!--Menú lateral de especificaciones técnicas-->
+<div id="menu_9" style="display:none;">
+			<div id="header_menu_9" class="logo"><img src="imgs/iphone/logo.png" alt="Logotipo Benq" /></div>
+            <table width="100%" class="propiedad_box propiedades p_l_50">
+                  <tr>
+                        <td class="categoria"><h1 class="categoria_productos">Proyectores DLP® <span ><div id="filtrosText_9"></div></span></h1></td>
+                  </tr>
+                  <!--1-->
+                  <tr class="cebra altura_1">
+                        <td><a href="javascript:gotoGlosario('Tecnología DLP ®');">Tecnología</a></td>
+                  </tr>
+                  <!--2-->
+                  <tr class="altura_1">
+                        <td>Color</td>
+                  </tr>
+                  <!--3-->
+                  <tr class="cebra altura_1">
+                        <td><a href="javascript:gotoGlosario('Lámpara');">Lámpara</a></td>
+                  </tr>
+                  <!--4-->
+                  <tr class="altura_1">
+                        <td><a href="javascript:gotoGlosario('Lúmenes');">Lúmenes</a></td>
+                  </tr>
+                  <!--5-->
+                  <tr class="cebra altura_1">
+                        <td><a href="javascript:gotoGlosario('Contraste');">Contraste</a></td>
+                  </tr>
+                  <!--6-->
+                  <tr class="altura_2">
+                        <td>Colores</td>
+                  </tr>
+                  <!--7-->
+                  <tr class="cebra altura_2">
+                        <td><a href="javascript:gotoGlosario('Corrección Trapezoidal');">Corrección trapezoidal</a></td>
+                  </tr>
+                  <!--8-->
+                  <tr class="altura_1">
+                        <td><a href="javascript:gotoGlosario('Tamaño de imagen');">Tamaño de la imagen</a></td>
+                  </tr>
+                  <!--9-->
+                  <tr class="cebra altura_1">
+                        <td><a href="javascript:gotoGlosario('Zoom en Proyectores');">Zoom</a></td>
+                  </tr>
+                  <!--10-->
+                  <tr class="altura_1">
+                        <td><a href="javascript:gotoGlosario('Peso');">Peso</a></td>
+                  </tr>
+                  <!--11-->
+                  <tr class="cebra altura_6">
+                        <td><a href="javascript:gotoGlosario('Entradas');">Entradas</a></td>
+                  </tr>
+                  <!--12-->
+                  <tr class="altura_2">
+                        <td><a href="javascript:gotoGlosario('Salidas');">Salidas</a></td>
+                  </tr>
+                  <!--13-->
+                  <tr class="cebra altura_3">
+                        <td>Otros</td>
+                  </tr>
+            </table>
+</div>
+<!--Especificaciones técnicas-->
+<div id="contenedor_9" style="display:none ;">
+         <section class="especificaciones_tecnicas">
+                <table class="tabla_productos propiedades">
+                      <tr class="primera_fila">
+                            <td class="ancho_0"><a href="javascript:goto(18);"><img src="imgs/tablet/proyector_1.jpg" alt="Proyector"><br>MS500+</a></td>
+                            <td><a href="javascript:goto(18);"><img src="imgs/tablet/proyector_1.jpg" alt="Proyector"><br>MS500+</a></td>
+                            <td><a href="javascript:goto(18);"><img src="imgs/tablet/proyector_1.jpg" alt="Proyector"><br>MS500+</a></td>
+                            <td><a href="javascript:goto(18);"><img src="imgs/tablet/proyector_1.jpg" alt="Proyector"><br>MS500+</a></td>
+                            <td><a href="javascript:goto(18);"><img src="imgs/tablet/proyector_1.jpg" alt="Proyector"><br>MS500+</a></td>
+                            <td><a href="javascript:goto(18);"><img src="imgs/tablet/proyector_1.jpg" alt="Proyector"><br>MS500+</a></td>
+                      </tr>
+                      <!--3-->
+                      <tr class="cebra altura_1">
+                        	<td>DLP®</td>
+                            <td>DLP®</td>
+                            <td>DLP®</td>
+                            <td>DLP®</td>
+                            <td>DLP®</td>
+                            <td>DLP®</td>
+                      </tr>
+                      <!--4-->
+                      <tr class="altura_1">
+                        	<td>SVGA</td>
+                            <td>SVGA</td>
+                            <td>SVGA</td>
+                            <td>SVGA</td>
+                            <td>SVGA</td>
+                            <td>SVGA</td>
+                      </tr>
+                      <!--5-->
+                      <tr class="cebra altura_2">
+                        	<td>6,000 Hrs. Eco</td>
+                            <td>6,000 Hrs. Eco</td>
+                            <td>6,000 Hrs. Eco</td>
+                            <td>6,000 Hrs. Eco</td>
+                            <td>6,000 Hrs. Eco</td>
+                            <td>6,000 Hrs. Eco</td>
+                      </tr>
+                      <!--6-->
+                      <tr  class="altura_1">
+                        <td>2,700</td>
+                         <td>2,700</td>
+                         <td>2,700</td>
+                         <td>2,700</td>
+                         <td>2,700</td>
+                         <td>2,700</td>
+                      </tr>
+                      <!--7-->
+                      <tr class="cebra altura_1">
+                        	<td>4,000:1</td>
+                            <td>4,000:1</td>
+                            <td>4,000:1</td>
+                            <td>4,000:1</td>
+                            <td>4,000:1</td>
+                            <td>4,000:1</td>
+                      </tr>
+                      <!--8-->
+                      <tr class="altura_2">
+                        	<td>1.07 billones</td>
+                            <td>1.07 billones</td>
+                            <td>1.07 billones</td>
+                            <td>1.07 billones</td>
+                            <td>1.07 billones</td>
+                            <td>1.07 billones</td>
+                      </tr>
+                      <!--9-->
+                      <tr class="cebra altura_2">
+                       		<td>ID, Vertical +40°</td>
+                            <td>ID, Vertical +40°</td>
+                            <td>ID, Vertical +40°</td>
+                            <td>ID, Vertical +40°</td>
+                            <td>ID, Vertical +40°</td>
+                            <td>ID, Vertical +40°</td>
+                      </tr>
+                      <!--10-->
+                      <tr class="altura_1">
+                       		<td>24" hasta 300"</td>
+                            <td>24" hasta 300"</td>
+                            <td>24" hasta 300"</td>
+                            <td>24" hasta 300"</td>
+                            <td>24" hasta 300"</td>
+                            <td>24" hasta 300"</td>
+                      </tr>
+                      <!--11-->
+                      <tr class="cebra altura_6">
+                        	<td>1.1:1 / Digital 2x</td>
+                            <td>1.1:1 / Digital 2x</td>
+                            <td>1.1:1 / Digital 2x</td>
+                            <td>1.1:1 / Digital 2x</td>
+                            <td>1.1:1 / Digital 2x</td>
+                            <td>1.1:1 / Digital 2x</td>
+                      </tr>
+                      <!--12-->
+                      <tr class="altura_1">
+                        	<td>2.5 kg</td>
+                            <td>2.5 kg</td>
+                            <td>2.5 kg</td>
+                            <td>2.5 kg</td>
+                            <td>2.5 kg</td>
+                            <td>2.5 kg</td>
+                      </tr>
+                      <!--13-->
+                     	<tr class="cebra altura_3">
+                        	<td>D-Sub,  Video Compuesto RCAx1, S-Video, Audio Mini Jackx1, USB Mini Bx1, RS232</td>
+                            <td>D-Sub,  Video Compuesto RCAx1, S-Video, Audio Mini Jackx1, USB Mini Bx1, RS232</td>
+                            <td>D-Sub,  Video Compuesto RCAx1, S-Video, Audio Mini Jackx1, USB Mini Bx1, RS232</td>
+                            <td>D-Sub,  Video Compuesto RCAx1, S-Video, Audio Mini Jackx1, USB Mini Bx1, RS232</td>
+                            <td>D-Sub,  Video Compuesto RCAx1, S-Video, Audio Mini Jackx1, USB Mini Bx1, RS232</td>
+                            <td>D-Sub,  Video Compuesto RCAx1, S-Video, Audio Mini Jackx1, USB Mini Bx1, RS232</td>
+                      </tr>
+                </table>
+             	<div class="clear"></div>
+        </section>
+</div>
+<div id="contenedor_10" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Monitores LCD LED</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas f_left">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Modelo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoMonitoresModelo" >
+                                                         
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Resolución</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                    		<select id="filtradoMonitoresResolucion">
+                                                           
+                                            </select>
+                                     </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Tamaño de pantalla</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                        	<select id="filtradoMonitoresTamanio">
+                                                            
+                                            </select>
+                                       	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Contraste</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoMonitoresContraste">
+                                                           
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr>
+										<td align="right"  class="boton_skin"><input onclick="JavaScript:gotoFiltradoMonitores();" type="button" value="Ver" ></td>
+                      			</tr>
+                    		</table>
+                    		<div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_monitores.jpg" alt="Ilustración monitores Benq"></div>
+                   			<div class="clear"></div>  
+              		</div>
+		</div>
+</div>
+<div id="contenedor_11" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Monitores LCD LED</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas f_left">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Modelo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select name="Modelo">
+                                                            <option>Modelo 1</option>
+                                                            <option>Modelo 2</option>
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Tamaño de pantalla</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                        	<select name="Modelo">
+                                                            <option>Modelo 1</option>
+                                                            <option>Modelo 2</option>
+                                            </select>
+                                       	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Uso</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select name="Modelo">
+                                                            <option>Modelo 1</option>
+                                                            <option>Modelo 2</option>
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr>
+                        				<td align="right"  class="boton_skin"><input type="button" value="Ver" ></td>
+                      			</tr>
+                    		</table>
+                    <div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_monitores.jpg" alt="Ilustración monitores Benq"></div>
+                   	<div class="clear"></div>  
+              </div>
+		</div>
+</div>
+
+<!--Cabeza de especificaciones técnicas-->
+<div id="resultado_12" class="resultado" style="display: none;">
+        <h1>Catálogo de Productos</h1>
+        <div class="clear"></div>  
+</div>
+<!--Menú lateral de especificaciones técnicas-->
+<div id="menu_12" style="display:none;">
+			<div id="header_menu_12" class="logo"><img src="imgs/iphone/logo.png" alt="Logotipo Benq" /></div>
+            <table width="100%" class="propiedad_box propiedades p_l_50">
+                  <tr class="categoria">
+                    <td><h1 class="categoria_productos">Monitores LCD LED<br><span><div id="filtrosText_12"></div></span></h1></td>
+                  </tr>
+                  <!--1-->
+                  <tr class="cebra altura_1">
+                    <td>Tamaño</td>
+                  </tr>
+                  <!--2-->
+                  <tr class="altura_1">
+                    <td>Resolución</td>
+                  </tr>
+                  <!--3-->
+                  <tr class="cebra altura_1">
+                    <td>Tiempo de Respuesta</td>
+                  </tr>
+                  <!--4-->
+                  <tr class="altura_1">
+                    <td>Ángulo de Visión</td>
+                  </tr>
+                  <!--5-->
+                  <tr class="cebra altura_1">
+                    <td>Contraste</td>
+                  </tr>
+                  <!--6-->
+                  <tr class="altura_1">
+                        <td>Brillo</td>
+                  </tr>
+                  <!--7-->
+                  <tr class="cebra altura_2">
+                        <td>Entradas</td>
+                  </tr>
+                  <!--8-->
+                  <tr class="altura_1">
+                        <td>Dimensiones</td>
+                  </tr>
+                  <!--11-->
+                  <tr class="cebra altura_1">
+                        <td>Vesa</td>
+                  </tr>
+                  <!--12-->
+                  <tr class="altura_1">
+                        <td>Compatibilidad</td>
+                  </tr>
+                  <!--13-->
+                  <tr class="cebra altura_5">
+                        <td>Otros</td>
+                  </tr>
+            </table>
+</div>
+<!--Especificaciones técnicas-->
+<div id="contenedor_12" style="display: none;">
+         <section class="especificaciones_tecnicas">
+                <table class="tabla_productos propiedad_box propiedades">
+                      <tr class="primera_fila">
+                            <td class="tipo_9"><img src="imgs/tablet/monitor.jpg" alt="Proyector"><br>XL2420T</td>
+                            <td><img src="imgs/tablet/monitor.jpg" alt="Proyector"><br>XL2420T</td>
+                            <td><img src="imgs/tablet/monitor.jpg" alt="Proyector"><br>XL2420T</td>
+                            <td><img src="imgs/tablet/monitor.jpg" alt="Proyector"><br>XL2420T</td>
+                            <td><img src="imgs/tablet/monitor.jpg" alt="Proyector"><br>XL2420T</td>
+                            <td><img src="imgs/tablet/monitor.jpg" alt="Proyector"><br>XL2420T</td>
+                      </tr>
+                      <!--3-->
+                      <tr class="cebra altura_1">
+                        	<td>24" 16:9</td>
+                            <td>24" 16:9</td>
+                            <td>24" 16:9</td>
+                            <td>24" 16:9</td>
+                            <td>24" 16:9</td>
+                            <td>24" 16:9</td>
+                      </tr>
+                      <!--4-->
+                      <tr class="altura_1">
+                        	<td>Full HD 1920x1080</td>
+                            <td>Full HD 1920x1080</td>
+                            <td>Full HD 1920x1080</td>
+                            <td>Full HD 1920x1080</td>
+                            <td>Full HD 1920x1080</td>
+                            <td>Full HD 1920x1080</td>
+                      </tr>
+                      <!--5-->
+                      <tr class="cebra altura_1">
+                        	<td>2ms (GTG)</td>
+                            <td>2ms (GTG)</td>
+                            <td>2ms (GTG)</td>
+                            <td>2ms (GTG)</td>
+                            <td>2ms (GTG)</td>
+                            <td>2ms (GTG)</td>
+                      </tr>
+                      <!--7-->
+                      <tr class="altura_1">
+                        <td>170/176</td>
+                         <td>170/176</td>
+                         <td>170/176</td>
+                         <td>170/176</td>
+                         <td>170/176</td>
+                         <td>170/176</td>
+                      </tr>
+                      <!--8-->
+                      <tr class="cebra altura_1">
+                        	<td>1000:1 DCR 12M:1</td>
+                            <td>1000:1 DCR 12M:1</td>
+                            <td>1000:1 DCR 12M:1</td>
+                            <td>1000:1 DCR 12M:1</td>
+                            <td>1000:1 DCR 12M:1</td>
+                            <td>1000:1 DCR 12M:1</td>
+                      </tr>
+                      <!--9-->
+                      <tr class="altura_1">
+                        	<td>350 cd/m2</td>
+                            <td>350 cd/m2</td>
+                            <td>350 cd/m2</td>
+                            <td>350 cd/m2</td>
+                            <td>350 cd/m2</td>
+                            <td>350 cd/m2</td>
+                      </tr>
+                      <!--10-->
+                      <tr class="cebra altura_2">
+                       		<td>D-Sub, DVI-DL, HDMI 1.4 x 2, DP 1.2, USB x 3</td>
+                            <td>D-Sub, DVI-DL, HDMI 1.4 x 2, DP 1.2, USB x 3</td>
+                            <td>D-Sub, DVI-DL, HDMI 1.4 x 2, DP 1.2, USB x 3</td>
+                            <td>D-Sub, DVI-DL, HDMI 1.4 x 2, DP 1.2, USB x 3</td>
+                            <td>D-Sub, DVI-DL, HDMI 1.4 x 2, DP 1.2, USB x 3</td>
+                            <td>D-Sub, DVI-DL, HDMI 1.4 x 2, DP 1.2, USB x 3</td>
+                      </tr>
+                      <!--11-->
+                      <tr class="altura_1">
+                       		<td>347.4 x 570 x 181.3 mm</td>
+                            <td>347.4 x 570 x 181.3 mm</td>
+                            <td>347.4 x 570 x 181.3 mm</td>
+                            <td>347.4 x 570 x 181.3 mm</td>
+                            <td>347.4 x 570 x 181.3 mm</td>
+                            <td>347.4 x 570 x 181.3 mm</td>
+                      </tr>
+                      <!--12-->
+                      <tr class="cebra altura_1">
+                        	<td>No</td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td>No</td>
+                      </tr>
+                      <!--13-->
+                      <tr class="altura_3">
+                        	<td>PC/MAC</td>
+                            <td>PC/MAC</td>
+                            <td>PC/MAC</td>
+                            <td>PC/MAC</td>
+                            <td>PC/MAC</td>
+                            <td>PC/MAC</td>
+                      </tr>
+                </table>
+             <div class="clear"></div>
+          </section>
+</div>
+
+<!--Menú de selección de productos por sus características técnicas-->
+<!--Menú de selección de productos por sus características técnicas-->
+<div id="contenedor_13" style="display: none;" class="contenedor">
+         <div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Cámaras Digitales</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas f_left">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Modelo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoCamarasModelo" >
+                                                           
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Resolución</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                    		<select id="filtradoCamarasResolucion">
+                                                           
+                                            </select>
+                                     </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Zoom</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                        	<select id="filtradoCamarasZoom">
+                                                           
+                                            </select>
+                                       	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Tipo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoCamarasTipo">
+                                                           
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr>
+                        				<td align="right"  class="boton_skin"><input onclick="JavaScript:gotoFiltradoCamaras();" type="button" value="Ver" ></td>
+                      			</tr>
+                    		</table>
+                    <div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_camaras.jpg" alt="Cámaras Benq"></div>
+                   	<div class="clear"></div>  
+              </div>
+		</div>
+</div>
+<div id="contenedor_14" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Cámaras Digitales</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas f_left">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Modelo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select name="Modelo">
+                                                            <option>Modelo 1</option>
+                                                            <option>Modelo 2</option>
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Resolución</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                    		<select name="Modelo">
+                                                            <option>Modelo 1</option>
+                                                            <option>Modelo 2</option>
+                                            </select>
+                                     </td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Tipo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                        	<select name="Modelo">
+                                                            <option>Modelo 1</option>
+                                                            <option>Modelo 2</option>
+                                            </select>
+                                       	</td>
+                                  </tr>
+                                  <tr class="etiqueta_caracteristica">
+                                    	<td>Video Cámaras</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select name="Modelo">
+                                                            <option>Modelo 1</option>
+                                                            <option>Modelo 2</option>
+                                            </select>
+                                    	</td>
+                                  </tr>
+                                  <tr>
+                        				<td align="right"  class="boton_skin"><input type="button" value="Ver" ></td>
+                      			</tr>
+                    		</table>
+                    <div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_camaras.jpg" alt="Cámaras Benq"></div>
+                   	<div class="clear"></div>  
+              </div>
+		</div>
+</div>
+
+<!--Cabeza de especificaciones técnicas-->
+<div id="resultado_15" style="display: none;" class=" resultado">
+        <h1>Catálogo de Productos</h1>
+        <div class="clear"></div>  
+</div>
+<!--Menú lateral de especificaciones técnicas-->
+<div id="menu_15" style="display:none;">
+			<div id="header_menu_15" class="logo"><img src="imgs/iphone/logo.png" alt="Logotipo Benq" /></div>
+            <table width="100%" class="propiedad_box propiedades tipo_15">
+              <tr class="categoria">
+                	<td><h1 class="categoria_productos">Cámaras Digitales<br><span><div id="filtrosText_15"></div></span></h1></td>
+              </tr>
+              <!--1-->
+              <tr class="cebra">
+                	<td>Resolución</td>
+              </tr>
+              <!--2-->
+              <tr class="altura_2">
+                	<td>Enfoque</td>
+              </tr>
+              <!--3-->
+              <tr class="cebra altura_1">
+                	<td>Macro</td>
+              </tr>
+              <!--4-->
+              <tr class="altura_1">
+                	<td>Zoom</td>
+              </tr>
+              <!--5-->
+              <tr class="cebra altura_1">
+                	<td>Pantalla</td>
+              </tr>
+              <!--6-->
+              <tr class="altura_1">
+                    <td>Video</td>
+              </tr>
+              <!--7-->
+              <tr class="cebra altura_3">
+                    <td>Memoria</td>
+              </tr>
+              <!--8-->
+              <tr class="altura_1">
+                    <td>Batería</td>
+              </tr>
+              <!--9-->
+              <tr class="cebra altura_1">
+                    <td>Peso / Dimensiones</td>
+              </tr>
+              <!--10-->
+              <tr class="altura_5">
+                    <td>Otros</td>
+              </tr>
+            </table>
+</div>
+<!--Especificaciones técnicas-->
+<div id="contenedor_15" style="display: none;">
+         <section class="especificaciones_tecnicas">
+                <table width="100%" class="propiedad_box propiedades p_l_50">
+                      <tr class="primera_fila">
+                            <td><img src="imgs/tablet/camara.jpg" alt="Proyector"><br>LT100</td>
+                            <td><img src="imgs/tablet/camara.jpg" alt="Proyector"><br>LT100</td>
+                            <td><img src="imgs/tablet/camara.jpg" alt="Proyector"><br>LT100</td>
+                            <td><img src="imgs/tablet/camara.jpg" alt="Proyector"><br>LT100</td>
+                            <td><img src="imgs/tablet/camara.jpg" alt="Proyector"><br>LT100</td>
+                            <td><img src="imgs/tablet/camara.jpg" alt="Proyector"><br>LT100</td>
+                      </tr>
+                      <!--2-->
+                      <tr class="cebra altura_1">
+                        	<td>14MP</td>
+                            <td>14MP</td>
+                            <td>14MP</td>
+                            <td>14MP</td>
+                            <td>14MP</td>
+                            <td>14MP</td>
+                      </tr>
+                      <!--3-->
+                      <tr class="altura_1">
+                        	<td>f=4.7 (W)-23.5 (T)mm F=2.8 (W)-6.5 (T)</td>
+                            <td>f=4.7 (W)-23.5 (T)mm F=2.8 (W)-6.5 (T)</td>
+                            <td>f=4.7 (W)-23.5 (T)mm F=2.8 (W)-6.5 (T)</td>
+                            <td>f=4.7 (W)-23.5 (T)mm F=2.8 (W)-6.5 (T)</td>
+                            <td>f=4.7 (W)-23.5 (T)mm F=2.8 (W)-6.5 (T)</td>
+                      </tr>
+                      <!--4-->
+                      <tr class="cebra altura_1">
+                        	<td>5cm</td>
+                            <td>5cm</td>
+                            <td>5cm</td>
+                            <td>5cm</td>
+                            <td>5cm</td>
+                            <td>5cm</td>
+                      </tr>
+                      <!--5-->
+                      <tr class="cebra">
+                        	<td>Óptico 5x, Digital 5x</td>
+                            <td>Óptico 5x, Digital 5x</td>
+                            <td>Óptico 5x, Digital 5x</td>
+                            <td>Óptico 5x, Digital 5x</td>
+                            <td>Óptico 5x, Digital 5x</td>
+                            <td>Óptico 5x, Digital 5x</td>
+                      </tr>
+                      <!--6-->
+                      <tr class="cebra altura_1">
+                        	<td>3.0" LTPS LCD 230k Touch</td>
+                            <td>3.0" LTPS LCD 230k Touch</td>
+                            <td>3.0" LTPS LCD 230k Touch</td>
+                            <td>3.0" LTPS LCD 230k Touch</td>
+                            <td>3.0" LTPS LCD 230k Touch</td>
+                            <td>3.0" LTPS LCD 230k Touch</td>
+                      </tr>
+                      <!--7-->
+                      <tr class="altura_1">
+                        	<td>MJPEG 720p</td>
+                            <td>MJPEG 720p</td>
+                            <td>MJPEG 720p</td>
+                            <td>MJPEG 720p</td>
+                            <td>MJPEG 720p</td>
+                            <td>MJPEG 720p</td>
+                      </tr>
+                      <!--8-->
+                      <tr class="cebra altura_3">
+                       		<td>11.1MB compatible con tarjetas SD (4GB) y SDHC (32GB)</td>
+                            <td>11.1MB compatible con tarjetas SD (4GB) y SDHC (32GB)</td>
+                            <td>11.1MB compatible con tarjetas SD (4GB) y SDHC (32GB)</td>
+                            <td>11.1MB compatible con tarjetas SD (4GB) y SDHC (32GB)</td>
+                            <td>11.1MB compatible con tarjetas SD (4GB) y SDHC (32GB)</td>
+                            <td>11.1MB compatible con tarjetas SD (4GB) y SDHC (32GB)</td>
+                      </tr>
+                      <!--9-->
+                      <tr class="altura_1">
+                       		<td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                      </tr>
+                      <!--10-->
+                      <tr class="cebra altura_1">
+                        	<td>115g / 97.5x57x19.4 mm</td>
+                            <td>115g / 97.5x57x19.4 mm</td>
+                            <td>115g / 97.5x57x19.4 mm</td>
+                            <td>115g / 97.5x57x19.4 mm</td>
+                            <td>115g / 97.5x57x19.4 mm</td>
+                            <td>115g / 97.5x57x19.4 mm</td>
+                      </tr>
+                      <!--11-->
+                      <tr class="altura_4">
+                        	<td>Lente Gran Angular 26mm, Panorámico, Estabilizador de Imagen O.I.S, Tecnologia HDRII, Acentuación de Color,Ojo de Pescado, LOMO, Pre-composición, Detector de ojos cerrados</td>
+                            <td>Lente Gran Angular 26mm, Panorámico, Estabilizador de Imagen O.I.S, Tecnologia HDRII, Acentuación de Color,Ojo de Pescado, LOMO, Pre-composición, Detector de ojos cerrados</td>
+                            <td>Lente Gran Angular 26mm, Panorámico, Estabilizador de Imagen O.I.S, Tecnologia HDRII, Acentuación de Color,Ojo de Pescado, LOMO, Pre-composición, Detector de ojos cerrados</td>
+                            <td>Lente Gran Angular 26mm, Panorámico, Estabilizador de Imagen O.I.S, Tecnologia HDRII, Acentuación de Color,Ojo de Pescado, LOMO, Pre-composición, Detector de ojos cerrados</td>
+                            <td>Lente Gran Angular 26mm, Panorámico, Estabilizador de Imagen O.I.S, Tecnologia HDRII, Acentuación de Color,Ojo de Pescado, LOMO, Pre-composición, Detector de ojos cerrados</td>
+                            <td>Lente Gran Angular 26mm, Panorámico, Estabilizador de Imagen O.I.S, Tecnologia HDRII, Acentuación de Color,Ojo de Pescado, LOMO, Pre-composición, Detector de ojos cerrados</td>
+                      </tr>
+                </table>
+             <div class="clear"></div>
+          </section>
+</div>
+
+<div id="contenedor_16" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Video cámaras</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas f_left">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Modelo</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoVideoModelo">                                                            
+                                                          
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  <tr>
+                        				<td align="right"  class="boton_skin"><input onclick="JavaScript:gotoFiltradoVideo();" type="button" value="Ver" ></td>
+                      			</tr>
+                    		</table>
+                    <div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_video_camaras.jpg" alt="Ilustración Video cámaras Benq"></div>
+                   	<div class="clear"></div>  
+              </div>
+		</div>
+</div>
+<!--Cabeza de especificaciones técnicas-->
+<div id="resultado_17" style="display: none;" class="resultado">
+        <h1>Catálogo de Productos</h1>
+        <div class="clear"></div>  
+</div>
+<!--Menú lateral de especificaciones técnicas-->
+<div id="menu_17" style="display:none;">
+			<div id="header_menu_17" class="logo"><img src="imgs/iphone/logo.png" alt="Logotipo Benq" /></div>
+            <table width="100%" class="propiedad_box propiedades tipo_17">
+              <tr class="categoria">
+                <td><h1 class="categoria_productos">Video C&aacute;maras<span ><div id="filtrosText_17"></div></span></h1></td>
+              </tr>
+              <!--1-->
+                  <tr class="cebra altura_1">
+                        <td>Sensor / Pantalla</td>
+                  </tr>
+                  <!--2-->
+                  <tr class="altura_1">
+                        <td>Zoom</td>
+                  </tr>
+                  <!--3-->
+                  <tr class="cebra altura_1">
+                        <td>Lente</td>
+                  </tr>
+                  <!--4-->
+                  <tr class="altura_3">
+                        <td>Rango de Enfoque</td>
+                  </tr>
+                  <!--5-->
+                  <tr class="cebra altura_1">
+                        <td>Modo de Video</td>
+                  </tr>
+                  <!--6-->
+                  <tr class="altura_1">
+                        <td>Resolución</td>
+                  </tr>
+				   <tr class="cebra altura_2">
+                        <td>Velocidad de Disparo</td>
+                  </tr>
+                  <!--7-->
+                  <tr class="altura_1">
+                        <td>Batería</td>
+                  </tr>
+                  <!--8-->
+                  <tr class="cebra altura_1">
+                        <td>Memoria</td>
+                  </tr>
+                  <!--9-->
+                  <tr class="altura_1">
+                        <td>Dimensiones/Color</td>
+                  </tr>
+                  <!--10-->
+                  <tr class="cebra altura_2">
+                        <td>Salidas</td>
+                  </tr>
+				  <tr class="altura_2">
+                        <td>Otros</td>
+                  </tr>
+        </table>
+</div>
+<!--Especificaciones técnicas-->
+<div id="contenedor_17" style="display:none ;">
+         <section class="especificaciones_tecnicas">
+                <table width="100%" class="propiedad_box propiedades p_l_50">
+                      <tr class="primera_fila">
+                            <td><img src="imgs/tablet/video_camara.jpg" alt="Proyector"><br>M23</td>
+                            <td><img src="imgs/tablet/video_camara.jpg" alt="Proyector"><br>M23</td>
+                            <td><img src="imgs/tablet/video_camara.jpg" alt="Proyector"><br>M23</td>
+                            <td><img src="imgs/tablet/video_camara.jpg" alt="Proyector"><br>M23</td>
+                            <td><img src="imgs/tablet/video_camara.jpg" alt="Proyector"><br>M23</td>
+                            <td><img src="imgs/tablet/video_camara.jpg" alt="Proyector"><br>M23</td>
+                      </tr>
+                      <!--1-->
+                      <tr class="cebra altura_1">
+                        	<td>CMOS / 3.0" 230K  4:3 Touch</td>
+                            <td>CMOS / 3.0" 230K  4:3 Touch</td>
+                            <td>CMOS / 3.0" 230K  4:3 Touch</td>
+                            <td>CMOS / 3.0" 230K  4:3 Touch</td>
+                            <td>CMOS / 3.0" 230K  4:3 Touch</td>
+                            <td>CMOS / 3.0" 230K  4:3 Touch</td>
+                      </tr>
+                      <!--2-->
+                      <tr class="altura_1">
+                        	<td>Óptico 5x / Digital 4x</td>
+                            <td>Óptico 5x / Digital 4x</td>
+                            <td>Óptico 5x / Digital 4x</td>
+                            <td>Óptico 5x / Digital 4x</td>
+                            <td>Óptico 5x / Digital 4x</td>
+                            <td>Óptico 5x / Digital 4x</td>
+                      </tr>
+                      <!--3-->
+                      <tr class="cebra altura_1">
+                        	<td>f = 5-25 mm / F=3.5-3.7</td>
+                            <td>f = 5-25 mm / F=3.5-3.7</td>
+                            <td>f = 5-25 mm / F=3.5-3.7</td>
+                            <td>f = 5-25 mm / F=3.5-3.7</td>
+                            <td>f = 5-25 mm / F=3.5-3.7</td>
+                            <td>f = 5-25 mm / F=3.5-3.7</td>
+                      </tr>
+                      <!--4-->
+                      <tr class="altura_3">
+                        	<td>Normal: 10cm~Infinito</td>
+                            <td>Normal: 10cm~Infinito</td>
+                            <td>Normal: 10cm~Infinito</td>
+                            <td>Normal: 10cm~Infinito</td>
+                            <td>Normal: 10cm~Infinito</td>
+                            <td>Normal: 10cm~Infinito</td>
+                      </tr>
+                      <!--5-->
+                      <tr class="cebra altura_1">
+                        	<td>Full HD, HD, WVGA, Web</td>
+                            <td>Full HD, HD, WVGA, Web</td>
+                            <td>Full HD, HD, WVGA, Web</td>
+                            <td>Full HD, HD, WVGA, Web</td>
+                            <td>Full HD, HD, WVGA, Web</td>
+                            <td>Full HD, HD, WVGA, Web</td>
+                      </tr>
+                      <!--6-->
+                      <tr class="altura_1">
+                        	<td>16MP, 8MP, 5MP, 3M</td>
+                            <td>16MP, 8MP, 5MP, 3M</td>
+                            <td>16MP, 8MP, 5MP, 3M</td>
+                            <td>16MP, 8MP, 5MP, 3M</td>
+                            <td>16MP, 8MP, 5MP, 3M</td>
+                            <td>16MP, 8MP, 5MP, 3M</td>
+                      </tr>
+                      <!--7-->
+                      <tr class="cebra altura_1">
+                       		<td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                            <td>Li-Ion recargable</td>
+                      </tr>
+                      <!--8-->
+                      <tr class="altura_1">
+                       		<td>SD/SDHC compatible (up to 32GB)</td>
+                            <td>SD/SDHC compatible (up to 32GB)</td>
+                            <td>SD/SDHC compatible (up to 32GB)</td>
+                            <td>SD/SDHC compatible (up to 32GB)</td>
+                            <td>SD/SDHC compatible (up to 32GB)</td>
+                            <td>SD/SDHC compatible (up to 32GB)</td>
+                      </tr>
+                      <!--9-->
+                      <tr class="cebra altura_1">
+                        	<td>10.6 x 6.5 x 3.7 cm / Azul</td>
+                            <td>10.6 x 6.5 x 3.7 cm / Azul</td>
+                            <td>10.6 x 6.5 x 3.7 cm / Azul</td>
+                            <td>10.6 x 6.5 x 3.7 cm / Azul</td>
+                            <td>10.6 x 6.5 x 3.7 cm / Azul</td>
+                            <td>10.6 x 6.5 x 3.7 cm / Azul</td>
+                      </tr>
+                      <!--10-->
+                      <tr class="altura_2">
+                        	<td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                      </tr>
+                      <tr class="altura_2">
+                        	<td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                            <td>Digital: USB 2.0, Audio<br>Video: NTSC, PAL. HDMI</td>
+                      </tr>
+                </table>
+             <div class="clear"></div>
+          </section>
+</div>
+
+<!--Envío de catálogo-->
+<div id="contenedor_18" style="display: none;" >
+		<div class="header">
+                 <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Ficha técnica</h1>
+                 <div class="clear"></div>  
+        </div>
+        <section id="imagen_especificaciones">
+	  		  <img id="espTec" src="imgs/Template_SpecSheet_Esp.jpg" alt="especificaciones técnicas">
+        </section>		
+</div>
+<div id="contenedor_19" style="display: none;" class="contenedor">
+  			<div class="header">
+                    	<img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                        <div class="clear"></div>  
+            </div>
+            <div class="caja">
+            		<div class="titulo"><h2>Envío de Catálogo</h2></div>
+                    <div class="box_p_20">
+               		  	<div class="formulario boton_skin">
+                        		<fieldset class="f_left">	
+                                		<label class="anotacion">Correos electrónicos</span><br><br>
+                                            <input name="" type="text" class="label_interior"><br>
+                                            <input name="" type="text" class="label_interior"><br>
+                                            <input name="" type="text" class="label_interior">
+                                            <input name="examinar" type="button" value="Examinar" id="examinar" >
+                                		</label>
+                           		</fieldset>
+                        </div>
+                       	<div class="ilustracion_envio_catalogo f_left">
+           		      			<img src="imgs/tablet/fondo_envio_formulario.png" alt="Ilustración envío de formulario">
+                        </div>
+                    	<div class="clear"></div>  
+                    </div>
+			</div>
+</div>
+<div id="contenedor_20" style="display: none;" class="contenedor">
+			<div class="header">
+                    	<img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                        <div class="clear"></div>  
+            </div>
+            <div class="p_20">
+            		<div class="titulo"><h2>Envío de Catálogo</h2></div>
+                    <div>
+               		  		<div class="formulario boton_skin">
+                        		<fieldset id="cargar_logo" class="f_left">	
+                                		<label>Cargar Logo<span  class="anotacion">(Que no exceda 1MB)</span><br><br>
+                                            <input name="" type="text">
+                                            <input name="examinar" type="button" value="Examinar" id="examinar" class="label_interior" >
+                                		</label>
+                           		</fieldset>
+                                <fieldset>	
+                                		<label class="anotacion">Correos electrónicos</span><br><br>
+                                            <input name="" type="text"><br>
+                                            <input name="" type="text"><br>
+                                            <input name="" type="text">
+                                            <input name="examinar" type="button" value="Enviar" id="examinar"  class="label_interior">
+                                		</label>
+                           		</fieldset>
+                        </div>
+                       	<div class="ilustracion_envio_catalogo f_left">
+           		      			<img src="imgs/tablet/fondo_envio_formulario.png" alt="Ilustración envío de formulario">
+                        </div>
+                    	<div class="clear"></div>  
+                    </div>
+			</div>
+</div>
+
+<!--Glosario-->
+<div id="contenedor_21" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Glosario</h1>
+                    <div class="clear"></div>  
+            </div>
+            
+</div>
+<!--Calculador de distancia-->
+<div id="contenedor_22" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Herramientas</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja no_border p_0" >
+            		<div class="titulo"><h2>Calculador de distancia</h2></div>
+  					<div class="caja_1 calculador">
+                    		<div id="imagen_calculador"><img src="imgs/tablet/sala.jpg" alt="Sala"></div>
+                            <div id="texto_calculador">
+                            		<p class="parrafo_herramientas m_b_15">¿Cómo realizar el cálculo de distancia entre la pantalla de proyección y el lugar donde quieres colocar el proyector, si no tienes a la mano un flexómetro? Fácil, completa los datos de abajo y te decimos en centímetros, qué distancia hay.</p>
+									<table width="100%" border="0">
+                                          <tr>
+                                            	<td><p  class="parrafo_herramientas">Tamaño de tu zapato en centímetros:</p></td>
+                                          </tr>
+                                          <tr>
+                                            	<td>
+                                            		<select id="tamZapato" name="tamZapato" onchange="calculaDistancia();">
+															<option value="24"> 24 cm, 6 USA, 36.5 Brasil</option>
+															<option value="24.5"> 24.5 cm, 6.5 USA, 37 Brasil</option>
+															<option value="25"> 25 cm, 7 USA, 37.5 Brasil</option>
+															<option value="25.5"> 25.5 cm, 7.5 USA, 38 Brasil</option>
+															<option value="26"> 26 cm, 8 USA, 38.5 Brasil</option>
+															<option value="26.5"> 26.5 cm, 8.5 USA, 39 Brasil</option>
+															<option value="27"> 27 cm, 9 USA, 39.5 Brasil</option>
+															<option value="27.5"> 27.5 cm, 9.5 USA, 40 Brasil</option>
+															<option value="28"> 28 cm, 10 USA, 40.5 Brasil</option>
+															<option value="28.5"> 28.5 cm, 10.5 USA, 41 Brasil</option>
+															<option value="29"> 29 cm, 11 USA, 41.5 Brasil</option>
+															<option value="29.5"> 29.5 cm, 11.5 USA, 42 Brasil</option>
+															<option value="30"> 30 cm, 12 USA, 42.5 Brasil</option>
+															<option value="30.5"> 30.5 cm, 12.5 USA, 43 Brasil</option>
+															<option value="31"> 31 cm, 13 USA, 43.5 Brasil</option>
+															<option value="31.5"> 31.5 cm, 13.5 USA, 44 Brasil</option>
+															<option value="32"> 32 cm, 14 USA, 44.5 Brasil</option>
+															<option value="32.5"> 32.5 cm, 14.5 USA, 45 Brasil</option>
+															<option value="33"> 33 cm, 15 USA, 45.5 Brasil</option>
+															<option value="33.5"> 33.5 cm, 15.5 USA, 46 Brasil</option>
+															<option value="34"> 34 cm, 16 USA, 46.5 Brasil</option>
+															<option value="34.5"> 34.5 cm, 16.5 USA, 47 Brasil</option>
+															<option value="35"> 35 cm, 17 USA, 47.5 Brasil</option>
+															<option value="35.5"> 35.5 cm, 17.5 USA, 48 Brasil</option>
+															<option value="36"> 36 cm, 18 USA, 48.5 Brasil</option>
+															<option value="36.5"> 36.5 cm, 18.5 USA, 49 Brasil</option>
+															<option value="37"> 37 cm, 19 USA, 49.5 Brasil</option>
+															<option value="37.5"> 37.5 cm, 19.5 USA, 50 Brasil</option>
+															<option value="38"> 38 cm, 20 USA, 50.5 Brasil</option>
+															<option value="38.5"> 38.5 cm, 20.5 USA, 51 Brasil</option>
+															<option value="39"> 39 cm, 21 USA, 51.5 Brasil</option>
+															<option value="39.5"> 39.5 cm, 21.5 USA, 52 Brasil</option>
+															<option value="40"> 40 cm, 22 USA, 52.5 Brasil</option>
+															<option value="40.5"> 40.5 cm, 22.5 USA, 53 Brasil</option>
+															<option value="41"> 41 cm, 23 USA, 53.5 Brasil</option>
+															<option value="41.5"> 41.5 cm, 23.5 USA, 54 Brasil</option>
+															<option value="42"> 42 cm, 24 USA, 54.5 Brasil</option>
+                                            		</select>
+                                            	</td>
+                                          </tr>
+                                          <tr>
+                                            	<td class="parrafo_herramientas"><p class="m_t_20">Número de zapatos que cabrían en la distancia que quieres medir: </p></td>
+                                          </tr>
+                                          <tr class="boton_skin">
+                                            	<td class="boton_skin m_b_20">
+                                                	<input type="number" name="numPasos" id="numPasos" min="1" max="100" value="10" class="label f_left" onchange="calculaDistancia();"/>
+                                                	<input name="examinar" type="button" value="Calcular" id="examinar"  onclick="JavaScript:calculaDistancia();" class="label label_interior f_left">
+                                                </td>
+                                          </tr>
+                                          <tr>
+                                               <td class="parrafo_herramientas">
+                                               		<p class="f_left m_t_25">Distancia: <span id="distancia_final" class="bold morado">240 </span></p>
+                                                    <select id="cb_distancia_final" onchange="calculaDistancia();"; class="f_left m_t_20">
+                                                            <option value="0">Cent&iacute;metros</option>
+															<option value="1">Metros</option>
+                                                            <option value="4">Pulgadas</option>
+															<option value="5">Pies</option>
+															<option value="6">Yardas</option>
+                                                     </select>
+                                               </td>
+                                          </tr>
+                                   	</table>     
+                            </div>
+							<div class="clear"></div>  
+                    </div>
+		</div>
+</div>
+<!--noticias-->
+<div id="contenedor_23" style="display: none;" >
+        <div id="imagen_especificaciones">
+	  		  <img id="noticiaImg" src="noticia.jpg" alt="especificaciones técnicas">
+        </div>		
+</div>
+<!--tips-->
+<div id="contenedor_24" style="display: none;" >
+        <div id="imagen_especificaciones">
+	  		  <img id="tipImg" src="tips.jpg" alt="especificaciones técnicas">
+        </div>		
+</div>
+<!--glosario temporal-->
+<div id="contenedor_25" style="display: none;" >
+		<div class="header">
+                 <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Glosario</h1>
+                 <div class="clear"></div>  
+        </div>
+        <div id="imagen_especificaciones">
+	  		  <img src="imgs/glosario.jpg" alt="especificaciones técnicas">
+        </div>		
+</div>
+<div id="contenedor_26" style="display: none;" class="contenedor">
+		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+            		<div class="titulo"><h2>Productos ECO</h2></div>
+                    <div class="p_0">
+                    	 	<table class="formulario_caracteristicas f_left">
+                                  <tr class="etiqueta_caracteristica">
+                                        <td>Productos</td>
+                                  </tr>
+                                  <tr>
+                                    	<td>
+                                    		<select id="filtradoProyectoresTipo" name="Modelo">
+															<option value="1">Proyectores</option>
+                                                            <option value="2">Monitores</option>
+                                                            <option value="3">Cámaras digitales</option>
+															<option value="4">Cámaras de video</option>
+                                            </select>
+                                      	 </td>
+                                  </tr>
+                                  
+                                  <tr>
+                        				<td align="right"  class="boton_skin"><input onclick="JavaScript:gotoFiltradoEco();" type="button" value="Ver" ></td>
+                      			</tr>
+                    </table>
+                    <div class="ilustracion_productos f_left"><img src="imgs/tablet/fondo_catalogo_proyectores.jpg" alt="Ilustración monitores Benq"></div>
+                   	<div class="clear"></div>  
+              </div>
+		</div>
+</div>
+<div id="contenedor_27" style="display: none;" class="contenedor">
+  		<div class="header">
+                    <img src="imgs/iphone/logo.png" alt="Logotipo Benq" /><h1>Catálogo de Productos</h1>
+                    <div class="clear"></div>  
+         </div>
+         <div class="caja">
+   		 		<div class="titulo back_morado right ayuda"><h2 class="m_r_60">Ayuda</h2></div>
+         		<div class="capa_ayuda absolute"><img src="imgs/tablet/ayuda/capa_ayuda.png" alt="Capa ayuda" /></div>
+                <div class="caja_1 p_t_20">
+                    		<table width="100%" border="0" class="tabla_ayuda t_p_7">
+                                  <tr >
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_atras_1.png" /></td>
+                                        <td colspan="2">Regresa a página inmediata anterior</td>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_home_1.png" /></td>
+                                        <td colspan="2">Va a Home, Menú inicial</td>
+                                  </tr>
+                                 <tr class="cebra_1">
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_guardar_completo_1.png"/></td>
+                                        <td rowspan="2" width="58"><img src="imgs/tablet/ayuda/flecha_c.png"/></td>
+                                        <td class="ancho_1">Descarga archivo PDF de <span class="bold_gill">Catálogo completo</span> al dispositivo</td>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_guardar_camaras_1.png"/></td>
+                                        <td rowspan="2" width="58"><img src="imgs/tablet/ayuda/flecha_d.png"/></td>
+                                    	<td class="ancho_1">Descarga archivo PDF de <span class="bold_gill">Catálogo de Cámaras </span>al dispositivo</td>
+                                  </tr>
+                                  <tr class="cebra_1">
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_enviar_completo_1.png" /></td>
+                                        <td>Envía link para descargar archivo PDF de <span class="bold_gill">Catálogo</span> a tus contactos vía correo electrónico</td>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_enviar_d_1.png" /></td>
+                                    <td>Envía link para descargar archivo PDF de<span class="bold_gill"> Catálogo de Cámaras</span> a tus contactos vía correo electrónico</td>
+                                  </tr>
+                                  <tr>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_guardar_proyectores_1.png"/></td>
+                                        <td rowspan="2"><img src="imgs/tablet/ayuda/flecha_p.png" /></td>
+                                        <td>Descarga archivo PDF de<span class="bold_gill"> Catálogo de Proyectores</span> al dispositivo</td>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_guardar_camaras_v_1.png"/></td>
+                                         <td rowspan="2"><img src="imgs/tablet/ayuda/flecha_v.png"/></td>
+                                    <td>Descarga archivo PDF de <span class="bold_gill">Catálogo de Video Cámaras</span> al dispositivo</td>
+                                  </tr>
+                                  <tr>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_enviar_proyectores_1.png" /></td>
+                                        <td>Envía link para descargar archivo PDF de <span class="bold_gill">Catálogo de Proyectores</span> a tus contactos vía correo electrónico</td>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_enviar_v_1.png" /></td>
+                                        <td>Envía link para descargar archivo PDF de <span class="bold_gill">Video Cámaras</span> a tus contactos vía correo electrónico</td>
+                                  </tr>
+								<tr class="cebra_1">
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_guardar_m_1.png"/></td>
+                                        <td rowspan="2"><img src="imgs/tablet/ayuda/flecha_m.png" /></td>
+                                        <td>Descarga archivo PDF de <span class="bold_gill">Catálogo de Monitores</span> al dispositivo</td>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_guardar_f_1.png"/></td>
+                                        <td rowspan="2"><img src="imgs/tablet/ayuda/flecha_f.png"/></td>
+                                        <td>Descarga archivo PDF de<span class="bold_gill"> Fichas Técnicas</span> filtradas al dispositivo</td>
+                              </tr>
+                                  <tr class="cebra_1">
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_enviar_m_1.png" /></td>
+                                        <td>Envía link para descargar archivo PDF de <span class="bold_gill">Catálogo de Monitores</span> a tus contactos vía correo electrónico</td>
+                                        <td class="right"><img src="imgs/tablet/ayuda/btn_enviar_f_1.png" /></td>
+                                        <td>Envía link para descargar archivo PDF de <span class="bold_gill">Fichas Técnicas</span> a tus contactos víacorreo electrónico</td>
+                                  </tr>
+                                </table>
+                 <div class="clear"></div>  
+           </div>
+		</div>
+</div>
+
+<footer id="pie_1" style="display: none;" >
+        <div class="pie_contenedor_benq" >
+                    <table width="100%" border="0">
+                          <tr >
+                         		<td  class="social center"><img src="imgs/iphone/facebook.png" alt="Facebook logo"><img src="imgs/iphone/twitter.png" alt="Facebook logo"><img src="imgs/iphone/benq.png" width="29" height="29" alt="Benq" /></td>
+                          </tr>
+                     </table>
+                    <div class="clear"></div>   
+        </div> 
+</footer>
+
+
+<footer id="pie_9" style="display: none;" >
+		<div class="pie_contenedor_benq">
+                    <div class="herramientas_pie">						
+						<div id="ayuda">
+								<a href="#"><img src="imgs/iphone/botones/ayuda.png" alt="Botón Ayuda"></a>
+					  	</div>
+						<div id="ir_home">
+								<a href="#"><img src="imgs/iphone/botones/home.png" alt="Botón ir al inicio"></a>
+					  	</div>
+						<div id="enviar">
+								<a href="#"><img src="imgs/iphone/botones/fichas_tecnicas_enviar.png" alt="Botón enviar"></a>
+					  </div>
+						<div id="guardar">
+								<a href="javascript:prev();"><img src="imgs/iphone/botones/fichas_tecnicas.png" alt="Botón atrás"></a>
+					  </div>
+						<div id="atras">
+							   <a href="javascript:next();"><img src="imgs/iphone/botones/regresar.png" alt="Botón atrás"></a>
+						</div>
+                    
+					</div>
+					<div class="clear"></div>
+        </div> 
+</footer>
+
+</body>
+</html>

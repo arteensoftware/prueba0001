@@ -1,0 +1,643 @@
+@charset "UTF-8";
+/*
+1. FORMULARIOS DE REGISTRO		
+		Formularios
+		Formularios Ipad
+		Botones morados
+2. BOXES
+		Padding
+		Margin
+3. GENERALES
+		Alineación y texto
+		Colores
+4. CABEZA
+5. INICIO
+		Columna 1
+		Columna 2	
+6.	INTERIORES
+		Contenedor general de sección
+		Contenedores resultados catálogo	
+		Capas flotantes
+		Fondo de catálogo de proyectores
+		Fondo de títulos de cajas
+		Títulos de cajas
+		Fondo de catálogos
+7. ESPECIFICACIONES TÉCNICAS
+		Menú lateral
+		Tabla de productos
+		Altura de filas
+8.	NAVEGACIÓN PRINCIPAL	
+		Portada de secciones	
+9. BÚSQUEDA DE PRODUCTOS
+10. ENVÍO DE CATÁLOGOS			
+11. HERRAMIENTAS
+12. AYUDA	
+13. PIE	
+		General
+		Herramientas		
+*/
+
+body{
+	font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height:100%;
+	width:100%;
+	max-width: 100%;
+	max-height:100%;
+	line-height: 1;
+	padding-bottom:0;
+}
+h1{
+	font-size:24px;
+	color:#541885;
+	font-family: 'GillSansBookItalic';
+}
+.h1_mini{
+	font-size:19px;
+	padding-top:2.013020833333333%;
+	float:left;
+}
+/*															1. FORMULARIOS DE REGISTRO																*/
+.registro_inicial{
+	margin-right:3.8%;	
+	font-size:1.1em; 
+	line-height:1.2;
+}
+/*		Formularios		*/
+.label{
+	height:36px;
+}
+.label_estructura{
+	margin:4px;
+	margin-left:25px;
+}
+.label_estructura img{
+	margin-top:-6px;
+}
+.label_interior{
+	margin:4px;
+}
+.label_skin{
+	font-size:15px;
+}
+.label_text{
+	font-size:1.25em;	line-height:1.9em;
+}
+.label_text_1{
+	font-size:1.25em;	line-height:2.2em;
+}
+.input_box{
+	margin: 0 10px 0 10px;
+}
+/*.formulario input[type="text"]{
+	height:23px;	font-size:.8em;	color:#333;padding:3px;
+}*/
+/*		Formularios Ipad		*/
+.campo_texto input[type="text"]{
+	height:30px;
+}
+.campo_texto input[type="password"]{
+	height:30px;
+}
+.registro_inicial input[type="radio"] {
+	padding:12px;
+}
+/*		Botones morados		*/
+.boton_skin input[type="button"] {
+	padding:5px;	
+	-webkit-appearance: none;
+	border:none;	
+	color:#FFF;	
+	font-size:16px; 
+	font-weight:bold; 
+	width:131px;
+	height:41px;	
+	background:url(../imgs/tablet/boton_ver_1.jpg) no-repeat; 
+}
+.large input[type="button"] {
+	width:140px;
+	height:31px;
+	background:url(../imgs/tablet/boton_ver_2.jpg) no-repeat;
+}
+.medium input[type="button"] {
+	width:100px;
+	height:31px;
+	background:url(../imgs/tablet/boton_ver_3.jpg) no-repeat;
+}
+/*																	2. BOXES															*/
+.box_p_25{
+	padding:25px;
+}
+.box_p_10{
+	padding:10px;
+}
+.box_p_20{
+	padding:20px;
+}
+/*Padding*/
+.p_0{
+	padding:0;
+}
+.p_t_10{
+	padding-top:10px;
+}
+.p_t_20{
+	padding-top:20px;
+}
+.p_l_20{
+	padding-left:20px;
+}
+.p_l_50{
+	padding-left:50px;
+}
+/*Margin*/
+.m_t_15{
+	margin-top:15px;
+}
+.m_t_30{
+	margin-top:30px;
+}
+.margin_l{
+	margin-left:10px;
+}
+.m_b_4{
+	margin-bottom:4%;
+}
+.m_t_4{
+	margin-top:4%;
+}
+.m_r_60{
+	margin-right:60px;
+}
+.t_p_7 tr td{
+	padding:7px;
+}
+
+/*														3. GENERALES													*/
+.clear{
+	clear:both;
+}
+.f_left{
+	float:left;
+}
+.f_right{
+	float:right;
+}
+.relative{
+	position:relative;
+}
+.absolute{
+	position:absolute;
+}
+.w_100{
+	width:100%;
+}
+/*alineación y texto*/
+.bold{
+	font-weight:bold;
+}
+.bold_gill{
+	font-family: 'GillSansHeavy';
+}
+.normal{
+	font-weight:normal;
+}
+.left{
+	text-align:left;
+}
+.right{
+	text-align:right;
+}
+.center{
+	text-align:center;
+}
+.anotacion_1{
+	font-size:13px;
+}
+.no_border{
+	border:none !important;
+	border-radius:none !important;
+}
+/*			Colores			*/
+.morado{
+	color:#541885;
+}
+.cebra{
+	background:#e5e5e5;
+}
+.cebra_1{
+	background:#f0f0f0;
+}
+.eco{
+	font-family: 'GillSansHeavy';
+	color:#2c9d40;
+}
+/*												4. CABEZA														*/
+.header{
+padding-bottom:4%;
+padding-left:4%;
+}
+.header img{
+	width:25%;
+}
+.header h1{
+	width:63.4%;
+	margin-top:6.5%;
+	padding-right:7.6%;
+	text-align:right;
+}
+/*CONTENEDOR 5 y 6: menú de secciones */
+.header_interior{
+	padding-bottom:7.9%;
+}
+/*												5. INICIO											*/
+/*	Columna 2		*/
+#mapa_1 img{
+	/*padding:0 8% 0 8%;*/
+	max-width:100%;
+}
+
+/*												6. INTERIORES												*/
+
+/*	Contenedor general de sección	*/
+.contenedor{	
+	background:url(../imgs/iphone/fondo_general.jpg) no-repeat left top #fff;
+	-webkit-background-size:100%; 
+	-moz-background-size:100%; 
+	background-size:100%; 
+	height:100%;
+	padding:3.4% 4% 9% 4.2%;
+}
+/*	Contenedores con cajas redondeadas	*/
+.caja{
+	clear:both;
+	height:71.940104166666666%;
+	margin-bottom:1.822916666666667%;
+	margin-right:3.02734375% ;
+	margin-left:4.4921875%;
+	width:92.48046875%;
+	/* margin right + margin left + width = 100% */
+	-moz-border-radius: 2.2em 2.2em 1.2em 1.2em;
+	-webkit-border-radius:2.2em 2.2em 1.2em 1.2em;
+	-khtml-border-radius:2.2em 2.2em 1.2em 1.2em; /* for old Konqueror browsers */
+	border-radius:2.2em 2.2em 1.2em 1.2em; /* future proofing */
+	border:#CCC 1px solid;
+	padding-bottom:1em;
+	background:#FFF;
+}
+.caja_1{
+	margin-top:-2em;
+	background:#FFF;
+	font-family: 'GillSansBook';
+	height:28em;
+}
+/*	Contenedores resultados catálogo	*/
+.contenedor_resultados_9,
+.contenedor_resultados_12,
+.contenedor_resultados_15,
+.contenedor_resultados_17{
+	background:url(../imgs/tablet/fondo_interior_1.jpg) no-repeat right top #ffffff !important;
+	-webkit-background-size:cover; 
+	-moz-background-size:cover; 
+	background-size:cover;
+}
+/*	Fondo de títulos de cajas	*/
+.titulo{
+	padding-left:10.986328125%;	padding-bottom:.8em;	padding-top:1.4em;	margin-bottom:2em;	background:url(../imgs/tablet/fondo_superior_formulario.png) no-repeat top left #a3a3a3;position: relative; z-index:4;
+	-webkit-border-radius: 2.2em 2.2em 0 0;
+	-khtml-border-radius:2.2em 2.2em 0 0; /* for old Konqueror browsers */
+	border-radius:2.2em 2.2em 0 0; /* future proofing */
+	-webkit-box-shadow: 0 .3em .4em -.2em #000000;
+	-moz-box-shadow: 0 .3em .4em -.2em #000000;
+	box-shadow: 0 .3em .4em -.2em #000000;
+}
+.back_morado{
+	background-color:#9e70cc;
+}
+/*	Títulos de cajas	*/
+.titulo h2{
+	color:#541885;	font-size:1.2em;font-family: 'GillSansHeavy';
+}
+/*	Capas superiores	*/
+.capa_sala{
+	z-index:6;	top:150px;left:681px;
+}
+.capa_ayuda{
+	z-index:6;	top:150px;left:896px;
+}
+/*	Fondo de catálogos*/
+#ext-container-1, #ext-container-3, #ext-container-5, #ext-container-7{
+	background:#FFF !important;
+}
+#ext-container-2, #ext-container-4, #ext-container-6, #ext-container-8{
+	background:none !important;
+}
+
+/*										7. ESPECIFICACIONES TÉCNICAS									*/
+#contenedor_18{	
+	background:url(../imgs/tablet/fondo_interior_1.jpg) no-repeat right top #FFF;
+	width:100%;
+	height:100%;
+	padding-top:4.817708333333333%;
+	padding-bottom:8.651026392961877%;
+}
+.logo{
+	padding-left:28.193832599118943%;
+	height:100px;
+}
+#header_menu_9 img,
+#header_menu_12 img,
+#header_menu_15 img,
+#header_menu_17 img{
+	padding-top:12%;
+}
+/*Menú lateral*/
+.categoria_productos{
+	font-family: 'GillSansHeavy';
+	font-size:1em;
+	color:#541885;
+	padding:8%;
+	margin-right:7%;
+	-webkit-border-radius: .5em .5em .5em .5em;
+	-khtml-border-radius:.5em .5em .5em .5em;/* for old Konqueror browsers */
+	border-radius:.5em .5em .5em .5em; /* future proofing */
+	background:#e2d8ea;
+}
+.propiedades{
+	text-align:left;
+	font-size:14px;
+}
+.propiedades tr td{
+	padding:.3em;
+	padding-left:1em;
+}
+.propiedad_box{
+	border-top:#CCC 1px solid;
+}
+.propiedad_box a{
+	color:#541885;
+}
+.p_l_50 tr td{
+	padding-left:50px;
+}
+.categoria{
+	height:203px;
+}
+.categoria_productos_1{
+	padding:0;
+	height:183px;
+}
+.resultado{
+	padding-left:56%;
+	padding-top:4.817708333333333%;
+}
+
+/*		Tabla de productos	*/
+.tabla_productos{
+	max-width:none;
+	background:#FFF;
+}
+.especificaciones_tecnicas img{
+	max-width:none;
+}
+.especificaciones_tecnicas{
+	clear:both;
+	margin-bottom:2.473958333333333%;
+	padding-top:0;
+	padding-bottom:0.911458333333333%;
+	text-align:left;
+	font-size:0.91em;
+	background:#FFF;
+}
+.especificaciones_tecnicas a{
+	color:#541885;
+}
+.primera_fila{
+	font-size:1.4325em;
+	line-height:1.1;
+	font-family: 'GillSansHeavy';;
+	color:#541885;
+	background:#FFF;
+	text-align:left;
+	height: 203px;
+}
+.primera_fila .ancho_0{
+	width:500px;
+}
+/*	Altura de filas	*/
+.altura_1{
+	height:21px;
+}
+.altura_2{
+	height:2.75em;
+}
+.altura_3{
+	height:3.8em;
+}
+.altura_4{
+	height:5em;
+}
+.altura_5{
+	height:6.3em;
+}
+.altura_6{
+	height:7.5em;
+}
+.ancho_0{
+	width:333px;
+}
+.tipo_9{
+	width:333px;
+}
+
+/*														8. NAVEGACIÓN PRINCIPAL													*/
+
+/*	Portada de secciones	*/
+.portada{
+	clear:both;
+}
+.portada ul{
+	width:100%;
+}
+.menu_portada ul li{
+	width:33%;
+	text-align:center;
+	float:left;
+	padding-bottom:.6em;
+}
+.menu_portada ul li .boton_menu{
+	height:2em;
+	margin-top:.4em;
+	margin-left:2%;
+	width:90%;
+	padding:.1em;
+	-moz-border-radius: .2em .2em .2em .2em;
+	-webkit-border-radius:.2em .2em .2em .2em;
+	-khtml-border-radius:.2em .2em .2em .2em; /* for old Konqueror browsers */
+	border-radius:.2em .2em .2em .2em; /* future proofing */
+	border:1px solid #d1d1d1;
+	-webkit-box-shadow:.1em .2em .1em .05em #999;
+	-moz-box-shadow:.1em .2em .1em .05em #999;
+	box-shadow:.1em .2em .1em .05em #999;
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #ffffff 68%, #dcdcdc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(68%,#ffffff), color-stop(100%,#dcdcdc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* IE10+ */
+	background: linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* W3C */
+}
+.menu_portada ul li img{
+	width:100%;
+}
+.menu_portada div a{
+	margin-top:.2em;
+	font-size:.8em;
+	line-height:1;
+	color:#333333;
+	text-decoration:none;
+	text-align:left;
+}
+.contenedor_menu_productos{
+	margin-left:13.8671875%;
+	margin-right:13.8671875%;
+	width:72.265625%;
+	clear:both;
+}
+.contenedor_menu_productos div{
+	float:left;
+	width:33.333333333333333%;
+	padding-left:2.5390625%;
+	padding-right:2.734375%;
+	/*width:40.071614583333333%;*/
+	text-align:left;
+	margin-bottom:2em;
+}
+.contenedor_menu_productos div  a{
+	font-size:1.34em;
+	text-decoration:none;
+	color:#541885;
+}
+.contenedor_menu_productos div a:active{
+	color:#962eeb;
+}
+.lista_inferior {
+	margin-left:13.18359375%;
+}
+/*														9. BÚSQUEDA DE PRODUCTOS												*/
+.formulario_caracteristicas{
+	width:41%;
+	margin-top:1.2em;
+}
+.formulario_caracteristicas tr td{
+	padding-left:26.405867970660147%;
+	padding-top:.5em;
+	padding-bottom:1em;
+}
+.etiqueta_caracteristica td{
+	background:url(../imgs/tablet/fondo_menu_caracteristica.png) no-repeat right top;
+	padding-left:8.801955990220049%;
+}
+.ilustracion_productos{
+	width:59%;
+	text-align:right;
+}
+/*													10. ENVÍO DE CATÁLOGOS														*/
+.ilustracion_envio_catalogo{
+	float:left;
+	width:45.60546875%;
+}
+.ilustracion_envio_catalogo img{
+	  max-width: 100%;  
+}
+.formulario_envio_catalogo{
+	float:left;
+	width:54.39453125%;
+	padding-top:17%;
+}
+.formulario_envio_catalogo_distribuidor{
+	float:left;
+	width:54.39453125%;
+	padding-top:10%;
+}
+/*														11. HERRAMIENTAS													*/
+.calculador{
+	width:947px;	
+	height:456px;
+	background:url(../imgs/tablet/fondo_herramienta_calculador.jpg) no-repeat bottom right;
+}
+/*Forma de caja redondeada*/
+#contenedor_22 #calculador{
+	clear:both;
+	height:71.940104166666666%;
+	margin-bottom:1.822916666666667%;
+	margin-right:3.02734375% ;
+	margin-left:4.4921875%;
+	width:92.48046875%;
+	padding-bottom:1em;
+}
+#imagen_calculador{
+	width:577px;
+	float:left;
+}
+#imagen_calculador img{
+	width:624px;
+	height:457px;
+}
+#texto_calculador{
+	width:323px;
+	height:457px;
+	float:left;
+	padding-top:6%;
+	padding-left:2%;
+	padding-right:2%;
+	padding-bottom:3%;
+}
+#texto_calculador label{
+	font-size:1em;
+}
+.parrafo_herramientas{
+	font-size:1em;
+	line-height:1.2em;
+}
+/*													12. AYUDA												*/
+.ayuda h2{
+	color:#FFF;
+	font-size:22px;
+}
+.tabla_ayuda img{
+	max-width:none;
+}
+/*													13. PIE												*/
+/*General*/
+footer{
+	clear:both;
+	background:url(../imgs/iphone/fondo_pleca.png) no-repeat center left #541885;
+	height:8.328125%;
+	margin-bottom:1.5%;
+	margin-right:3.125% ;
+	margin-left:4.296875%;
+	width:92.578125%;
+	height:5%;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px; /* future proofing */
+	-khtml-border-radius: 8px; /* for old Konqueror browsers */
+	font-size:.6em;
+	line-height:1.3em;
+	color:#FFF;
+}
+.pie_contenedor_benq a{
+	color:#FFF;
+	text-decoration:underline;
+}
+.social img{
+	padding:2%;
+}
+.social p{
+	font-size:.8em;
+}
+/*		Herramientas		*/
+.herramientas_pie div{
+	float:right;
+	padding:2.5% 3% 1.7% 3%;
+}

@@ -1,0 +1,799 @@
+@charset "UTF-8";
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+@font-face {
+    font-family: 'GillSansBook';
+    src: url('../fonts/gill_sans_book-webfont.eot');
+    src: url('../fonts/gill_sans_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gill_sans_book-webfont.woff') format('woff'),
+         url('../fonts/gill_sans_book-webfont.ttf') format('truetype'),
+         url('../fonts/gill_sans_book-webfont.svg#GillSansBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillSansHeavy';
+    src: url('../fonts/gill_sans_heavy-webfont.eot');
+    src: url('../fonts/gill_sans_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gill_sans_heavy-webfont.woff') format('woff'),
+         url('../fonts/gill_sans_heavy-webfont.ttf') format('truetype'),
+         url('../fonts/gill_sans_heavy-webfont.svg#GillSansHeavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GillSansBookItalic';
+    src: url('../fonts/gill_sans_book_italic-webfont.eot');
+    src: url('../fonts/gill_sans_book_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gill_sans_book_italic-webfont.woff') format('woff'),
+         url('../fonts/gill_sans_book_italic-webfont.ttf') format('truetype'),
+         url('../fonts/gill_sans_book_italic-webfont.svg#GillSansBookItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height:100%;
+	width:100%;
+	max-width: 100%;
+	max-height:100%;
+	line-height: 1;
+	padding-bottom:0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+#contenedor1{
+	height:100%;
+	width:100%;
+	background: url(../imgs/ipad_1024/fondo_sitio.jpg) no-repeat left top #FFF;
+	max-width: 100%;
+	max-height:100%;
+	line-height: 1;
+	padding-bottom:0;
+}
+#contenedor{
+	width:100%;
+	height:100%;
+}
+/*												COLUMNA 1											*/
+#columna_1{
+	margin-left:6.29882813%;
+	width:28.4667969%;
+	/* margin left + width = 34.76562503%  */
+	margin-top:6.315104166666667%;
+	/*margin-bottom:1.692708333333333%;*/
+	height:82.356770833333333%;
+	/* margin top + margin bottom + height  = 88.736979166666663%  */
+	float:right;
+}
+#columna_1 label{
+	font-size:1em; /*16px ÷16px (font-size:100%) = tamaño en em */
+}
+#columna_1 header{
+	margin-bottom:21.6796875%;
+}
+/*												COLUMNA 2											*/
+#columna_2{
+	float:right;
+	margin-top:3.515625%;
+	margin-bottom:1.692708333333333%;
+	height:83.463541666666667%;
+	/* margin top + margin bottom + height  = 88.671875%  */
+	margin-right:3.02734375%;
+	width:62.20703125%;
+	/* margin right + width = 65.234375%  */
+	text-align:right;
+}
+/* ancho de columna 1 (65.234375%) +  ancho de columna 2 (34.76562503%) = 100.00000003% */
+
+
+/*												INTERIORES												*/
+
+/*												Contenedor 1												*/
+#contenedor_2,
+#contenedor_3{
+	background:url(../imgs/ipad_1024/fondo_interior.jpg) no-repeat right top #FFF;
+}
+#contenedor_2 header,
+#contenedor_3 header{
+	margin-left:5.712890625%;
+	margin-right:3.3203125%;
+	width:90.966796875%;
+	height:8.887001811594203%;
+	padding:3.0434782608695652% 0 2.7391304347826087% 0%;
+}
+#contenedor_2 header img, 
+#contenedor_3 header img{
+	float:left;
+	padding-right:66.58203125%;
+}
+#contenedor_2 header h1,
+#contenedor_3 header h1{
+	font-size:1.875em;
+	color:#541885;
+	font-family: 'GillSansBookItalic', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	float:left;
+}
+/*Contenedor 2 y Contenedor 3:  Formularios de registro*/
+#contenedor_2 .registro .formulario fieldset#razon_social{
+	clear:both;
+	margin-bottom:.5em;
+}
+#contenedor_2 .registro .formulario fieldset legend{
+	font-size:1.25em;
+	line-height:2.2em;
+}
+#contenedor_2 .registro .formulario fieldset label, 
+#contenedor_3 .registro .formulario fieldset label{
+	font-size:1.25em;
+	line-height:2.2em;
+}
+#contenedor_2 .registro .formulario fieldset label.anotacion, 
+#contenedor_3 .registro .formulario fieldset label.anotacion{
+	font-size:1.25em;
+	line-height:0;	
+}
+#contenedor_2 .registro .formulario fieldset label.anotacion span, 
+#contenedor_3 .registro .formulario fieldset label.anotacion span{
+	font-size:.7em;
+}
+#contenedor_2 .registro .formulario input,
+#contenedor_3 .registro .formulario input{
+	font-family: 'GillSansHeavy',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left:.5em;
+	margin-right:.8em;
+	border:1px solid #7f7d7d;
+	/*-webkit-box-shadow: 0 .1em .3em -4px black;
+	-moz-box-shadow: 0 .1em .3em -4px black;
+	box-shadow: 0 .1em .3em -4px black;*/
+	padding:.3em;
+	font-size:.8em;
+	color:#333;
+}
+#contenedor_2 .registro .formulario fieldset label input#examinar{
+	font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px; /* for old Konqueror browsers */
+	border-radius:3px; /* future proofing */	
+	padding:.3em .5em .2em .5em;
+	font-size:.8em;
+	color:#000;
+	-webkit-appearance: none;
+}
+#contenedor_2 .registro .formulario{
+	padding:.7em 1.5em 0 2.2em;
+}
+#contenedor_3 .registro .formulario{
+	padding:4em 1.5em 2em 2.2em;
+}
+
+/*																CONTENEDORES. Características comúnes 													*/
+/*Fondo general de contenedores:
+	Contenedor 5: Glosario
+	Contenedor 6: Envío de catálogo
+	Contenedor 7: Menú de categorías de productos
+	Contenedor 8: Menú de selección de productos por sus características técnicas
+	Contenedor 9: Calculador de distancia	*/
+#contenedor_5,
+#contenedor_6,
+#contenedor_5_glosario, 
+#contenedor_6_envio_catalogo, 
+#contenedor_8_menu_seleccion,
+#contenedor_9_calculador{	
+	background:url(../imgs/ipad_1024/fondo_interior_1.jpg) no-repeat right top #039;
+	-webkit-background-size:cover; 
+	-moz-background-size:cover; 
+	background-size:cover;
+	width:100%;
+	height:100%;
+	padding-top:4.817708333333333%;
+	padding-bottom:8.651026392961877%;
+}
+/*	Cabeza:
+Contenedor 4: Especificaciones técnicas
+Contenedor 5: Glosario
+Contenedor 6: Envío de catálogo
+Contenedor 7: Menú de categorías de productos
+Contenedor 8: Menú de selección de productos por sus características técnicas*/
+#contenedor_5 header,
+#contenedor_6 header,
+#contenedor_9 header,  
+#contenedor_5_glosario header, 
+#contenedor_6_envio_catalogo header,
+#contenedor_8_menu_seleccion header,
+#contenedor_9_calculador header{
+	margin-left:6.25%;
+	width:93.75%;
+	padding-bottom:3.125%;
+}
+/*	Imagen de cabeza	*/
+#contenedor_5 header img, 
+#contenedor_6 header img, 
+#contenedor_5_glosario header img, 
+#contenedor_8_menu_seleccion header img,
+#contenedor_9_calculador header img{
+	float:left;
+	padding-right:60%;
+}
+/*	Titulo de cabeza*/
+#contenedor_5 header h1,
+#contenedor_6 header h1,
+#contenedor_9 header h1, 
+#contenedor_5_glosario header h1, 
+#contenedor_6_envio_catalogo header h1, 
+#contenedor_8_menu_seleccion header h1,
+#contenedor_9_calculador header h1{
+	font-size:1.5em;
+	color:#541885;
+	font-family: 'GillSansBookItalic', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top:1.822916666666667%;
+	float:left;
+}
+
+/*	Contenedores con cajas redondeadas:
+	Contenedor 2: Formulario de registro	
+	Contenedor 5: Glosario
+	Contenedor 6: Envío de catálogo
+	Contenedor 8: Catálogo de productos		*/
+
+/*Forma de cajas redondeadas*/
+#contenedor_2 .registro,
+#contenedor_3 .registro,
+#contenedor_5_glosario #glosario, 
+#contenedor_6_envio_catalogo #envio_catalogo, 
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales{
+	clear:both;
+	height:71.940104166666666%;
+	margin-bottom:1.822916666666667%;
+	margin-right:3.02734375% ;
+	margin-left:4.4921875%;
+	width:92.48046875%;
+	/* margin right + margin left + width = 100% */
+	-moz-border-radius: 2.2em 2.2em 1.2em 1.2em;
+	-webkit-border-radius:2.2em 2.2em 1.2em 1.2em;
+	-khtml-border-radius:2.2em 2.2em 1.2em 1.2em; /* for old Konqueror browsers */
+	border-radius:2.2em 2.2em 1.2em 1.2em; /* future proofing */
+	border:#CCC 1px solid;
+	padding-bottom:1em;
+	background:#FFF;
+}
+/*Fondo de títulos de cajas redondeadas*/
+#contenedor_2 .registro .titulo, 
+#contenedor_3 .registro .titulo,
+#contenedor_5_glosario #glosario #titulo, 
+#contenedor_6_envio_catalogo #envio_catalogo #titulo, 
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #titulo,
+#contenedor_9_calculador #calculador #titulo{
+	padding-left:10.986328125%;
+	padding-bottom:.8em;
+	padding-top:1.4em;
+	margin-bottom:2em;
+	-webkit-border-radius: 2.2em 2.2em 0 0;
+	-khtml-border-radius:2.2em 2.2em 0 0; /* for old Konqueror browsers */
+	border-radius:2.2em 2.2em 0 0; /* future proofing */
+	background:url(../imgs/ipad_1024/fondo_superior_formulario.png) no-repeat top left #a3a3a3;
+	-webkit-box-shadow: 0 .3em .4em -.2em #000000;
+	-moz-box-shadow: 0 .3em .4em -.2em #000000;
+	box-shadow: 0 .3em .4em -.2em #000000;
+	z-index:9999;
+	position: relative;
+}
+/*Títulos de cajas redondeadas*/
+#contenedor_2 .registro .titulo h2, 
+#contenedor_3 .registro .titulo h2,
+#contenedor_5_glosario #glosario #titulo h2,  
+#contenedor_6_envio_catalogo #envio_catalogo #titulo h2, 
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #titulo h2,
+#contenedor_9_calculador #calculador #titulo h2{
+	color:#541885;
+	font-size:1.2em;
+	font-family: 'GillSansHeavy', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/*Contenido principal de cajas redondeadas*/
+#contenedor_2 .registro .formulario, 
+#contenedor_5_glosario #glosario #contenedor_glosario, 
+#contenedor_6_envio_catalogo #contenedor_envio_catalogo, 
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #contenedor_catalogo {
+	margin-top:-2em;
+	background:#FFF;
+	/*padding:.7em 1.5em 0 2.2em;*/
+	font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height:28em;
+}
+/*					CONTENEDOR 3	. Portada de secciones										*/
+#contenedor_4{
+	background:url(../imgs/ipad_1024/fondo_menu_productos.jpg) no-repeat right top #039;
+	-webkit-background-size:cover; 
+	-moz-background-size:cover; 
+	background-size:cover;
+	width:100%;
+	height:100%;
+	padding-top:8.357771260997067%;
+	padding-bottom:8.651026392961877%;
+}
+#contenedor_4 header{
+	margin-left:5.712890625%;
+	margin-right:3.3203125%;
+	width:90.966796875%;
+	padding-bottom:11%;
+}
+#contenedor_4 header img{
+	float:left;
+	padding-right:7.51953125%;
+}
+#contenedor_4 header h1{
+	font-size:1.279375em;
+	color:#541885;
+	font-family: 'GillSansBookItalic', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top:2.013020833333333%;
+	float:left;
+}
+/*						Portada de secciones											*/
+#menu_portada{
+	clear:both;
+	margin-right:3.02734375% ;
+	margin-left:4.4921875%;
+	width:92.48046875%;
+	font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#menu_portada ul{
+	width:100%;
+}
+#menu_portada ul li{
+	width:19.5%;
+	margin:.25%;
+	text-align:center;
+	float:left;
+	padding-bottom:.6em;
+}
+#menu_portada ul li div{
+	height:2.8em;
+	margin-top:.8em;
+	margin-left:2%;
+	margin-right:2%;
+	width:96%;
+	padding:.9em .3em .9em .3em;
+	-moz-border-radius: .3em .3em .3em .3em;
+	-webkit-border-radius:.3em .3em .3em .3em;
+	-khtml-border-radius:.3em .3em .3em .3em; /* for old Konqueror browsers */
+	border-radius:.3em .3em .3em .3em; /* future proofing */
+	border:1px solid #d1d1d1;
+	-webkit-box-shadow:.3em .3em .5em -.2em #999;
+	-moz-box-shadow:.3em .3em .5em -.2em #999;
+	box-shadow:.3em .3em .5em -.2em #999;
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #ffffff 68%, #dcdcdc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(68%,#ffffff), color-stop(100%,#dcdcdc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* IE10+ */
+	background: linear-gradient(top,  #fefefe 0%,#ffffff 68%,#dcdcdc 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dcdcdc',GradientType=0 ); /* IE6-9 */
+	/*-webkit-box-shadow: inset .1em .1em .7em 1px #e3e1e1;
+	-moz-box-shadow: inset .1em .1em .7em 1px #e3e1e1;
+	box-shadow:inset .1em .1em .7em 1px #e3e1e1;*/
+}
+#menu_portada ul li img{
+	width:100%;
+}
+#menu_portada div a{
+	margin-top:.2em;
+	font-size:1em;
+	line-height:1;
+	color:#333333;
+	text-decoration:none;
+	text-align:left;
+}
+
+/*CONTENEDOR 4. Especificaciones técnicas*/
+#contenedor_9{
+	border-top:2px solid #cccccc;
+}
+#contenedor_9 #especificaciones_tecnicas{
+	clear:both;
+	margin-bottom:2.473958333333333%;
+	border-bottom:2px solid #cccccc;
+	padding-top:1.473958333333333%;
+	padding-bottom:0.911458333333333%;
+	text-align:left;
+	font-size:0.916875em;
+	background:#FFF;
+}
+.contenedor_resultados_4{
+	background:url(../imgs/ipad_1024/fondo_interior_1.jpg) no-repeat right top #ffffff;
+	-webkit-background-size:cover; 
+	-moz-background-size:cover; 
+	background-size:cover;
+}
+/*Menú izquierdo de especificaciones técnicas*/
+#header_menu_1{
+	height:100px;
+	padding-left:28.193832599118943%;
+	padding-top:3.61328125%;
+}
+/*Columna de nombre de las especificaciones*/
+/*	Imagen de cabeza	*/
+#header_menu_1 img{
+	padding-top:12%;
+}
+/*Tabla de nombre de las especificaciones*/
+table#columna_especificaciones{
+	text-align:left;
+	font-size:0.91em;
+	border-top:#CCC 2px solid;
+	border-right:#CCC 1px solid;
+}
+table#columna_especificaciones tr.categoria_productos{
+	height:202px;
+}
+table#columna_especificaciones tr td{
+	padding:.3em;
+	padding-left:1em;
+}
+table#columna_especificaciones h1{
+	font-family: 'GillSansHeavy',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:1em;
+	color:#541885;
+	padding:8%;
+	margin-right:7%;
+	-webkit-border-radius: .5em .5em .5em .5em;
+	-khtml-border-radius:.5em .5em .5em .5em;/* for old Konqueror browsers */
+	border-radius:.5em .5em .5em .5em; /* future proofing */
+	background:#e2d8ea;
+}
+table#columna_especificaciones h1 span{
+	font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+table#columna_especificaciones tr:first-child{
+	padding-left:3.125%;
+}
+tr.cebra{
+	background:#e5e5e5;
+}
+tr.tres_lineas{
+	height:3.8em;
+}
+#resultado_1{
+}
+/*	Cabeza:*/
+.cabeza_resultado{
+}
+#resultado_1{
+	width:93.75%;
+	padding-top:3.817708333333333%;
+}
+/*	Titulo de cabeza*/
+#resultado_1 h1{
+	font-size:1.5em;
+	color:#541885;
+	font-family: 'GillSansBookItalic', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top:2.817708333333333%;
+	padding-left:49.70703125%;
+	float:left;
+}
+/*								Tabla de productos							*/
+#contenedor_9 #especificaciones_tecnicas img{
+	max-width:none;
+}
+#contenedor_9 #especificaciones_tecnicas table#tabla_productos{
+	background:#FFF;
+}
+#contenedor_9 #especificaciones_tecnicas table#tabla_productos tr td{
+	padding:.3em;
+}
+#contenedor_9 #especificaciones_tecnicas table#tabla_productos tr.cebra{
+	background:#e5e5e5;
+}
+#especificaciones_tecnicas table#tabla_productos tr.primera_fila{
+	font-size:1.4325em;
+	line-height:1.1;
+	font-family: 'GillSansHeavy';
+	color:#541885;
+	background:#FFF;
+	text-align:left;	
+}
+
+/*					CONTENEDOR 7: Menú de categorías de productos								*/
+
+#contenedor_5 header,
+#contenedor_6 header {
+	padding-bottom:7.890625%;
+}
+#contenedor_5 header h1,
+#contenedor_6 header h1{
+	padding-top:0;
+}
+#contenedor_5 .contenedor_menu_productos,
+#contenedor_6 .contenedor_menu_productos{
+	margin-left:13.8671875%;
+	margin-right:13.8671875%;
+	width:72.265625%;
+	clear:both;
+}
+#contenedor_5 .contenedor_menu_productos ul,
+#contenedor_6 .contenedor_menu_productos ul{
+	width:100%;
+}
+#contenedor_5 .contenedor_menu_productos div,
+#contenedor_6 .contenedor_menu_productos div {
+	float:left;
+	width:33.333333333333333%;
+	padding-left:2.5390625%;
+	padding-right:2.734375%;
+	/*width:40.071614583333333%;*/
+	text-align:left;
+	margin-bottom:2em;
+}
+#contenedor_5 .contenedor_menu_productos div img,
+#contenedor_6 .contenedor_menu_productos div img{
+	width:100%;
+	padding:0;
+}
+#contenedor_5 .contenedor_menu_productos div  a,
+#contenedor_6 .contenedor_menu_productos div  a{
+	font-size:1.34em;
+	text-decoration:none;
+	color:#541885;
+}
+#contenedor_5 .contenedor_menu_productos div  a span.eco{
+	font-family: 'GillSansHeavy', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#2c9d40;
+}
+#contenedor_5 .contenedor_menu_productos div a:active,
+#contenedor_6 .contenedor_menu_productos div a:active{
+	color:#962eeb;
+}
+#contenedor_5 .contenedor_menu_productos div.lista_inferior {
+	margin-left:13.18359375%;
+}
+
+
+/*						CONTENEDOR 6: Envío de formulario								*/
+
+#contenedor_6_envio_catalogo header img{
+	margin-right:58.203125%;
+	float:left;
+}
+#contenedor_6_envio_catalogo header h1{
+	padding-top:0;
+}
+/*						Contenedor de envio catalogo											*/
+#contenedor_6_envio_catalogo #contenedor_envio_catalogo{
+	padding:1em .3em 0 2.2em;
+}
+#formulario_envio_catalogo{
+	float:left;
+	width:54.39453125%;
+	padding-top:17%;
+}
+#contenedor_6_envio_catalogo #formulario_envio_catalogo #cargar_logo label{
+	font-size:1.125em;
+	line-height:2.2em;
+}
+#contenedor_6_envio_catalogo #formulario_envio_catalogo #cargar_logo label.anotacion{
+	font-size:1.125em;
+	line-height:0;	
+}
+#contenedor_6_envio_catalogo #formulario_envio_catalogo #cargar_logo label.anotacion span{
+	font-size:.7em;
+}
+#formulario_envio_catalogo #cargar_logo input{
+	font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left:0;
+	margin-right:0;
+	border:1px solid #7f7d7d;
+	-webkit-box-shadow: 0 .1em .3em -4px black;
+	-moz-box-shadow: 0 .1em .3em -4px black;
+	box-shadow: 0 .1em .3em -4px black;
+	padding:.3em .5em .3em .5em;
+	font-size:.8em;
+	color:#333;
+	margin-bottom:1.2em;
+}
+#ilustracion_envio_catalogo{
+	float:left;
+	width:45.60546875%;
+}
+#ilustracion_envio_catalogo img{
+	  max-width: 100%;  
+}
+
+
+/*					CONTENEDOR 8: Catálogo de productos							*/
+#contenedor_8_menu_seleccion header h1{
+	padding-top:0;
+}
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #contenedor_catalogo #caracteristicas{
+	width:40.13671875%;
+	float:left;
+	margin-top:1.2em;
+}
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #contenedor_catalogo table tr td{
+	padding-left:26.405867970660147%;
+	padding-top:.5em;
+	padding-bottom:1.5em;
+}
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #contenedor_catalogo .etiqueta_caracteristica td{
+	background:url(../imgs/ipad_1024/fondo_menu_caracteristica.png) no-repeat right top;
+	height:2.4em;
+	padding-left:8.801955990220049%;
+}
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #contenedor_catalogo{
+	padding:0;
+}
+#contenedor_8_menu_seleccion #catalogo_camaras_digitales #contenedor_catalogo #ilustracion_productos{
+	width:59.86328125%;
+	float:left;
+	text-align:right;
+}
+
+/*						CONTENEDOR 5	: Glosario							*/
+
+/*						Glosario											*/
+#glosario #contenedor_glosario{
+	height:28em;
+}
+
+/*					CONTENEDOR 9: Calculador de distancia						*/
+#contenedor_9_calculador header h1{
+	padding-top:0;
+}
+/*Contenido principal de cajas redondeadas*/
+#contenedor_9_calculador #calculador #contenedor_calculador {
+	margin-top:-2em;
+	background:#FFF;
+	padding:0;
+	font-family: 'GillSansBook', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/*Forma de caja redondeada*/
+#contenedor_9_calculador #calculador{
+	clear:both;
+	height:71.940104166666666%;
+	margin-bottom:1.822916666666667%;
+	margin-right:3.02734375% ;
+	margin-left:4.4921875%;
+	width:92.48046875%;
+	padding-bottom:1em;
+	background:#FFF;
+}
+#imagen_calculador{
+	width:60.9375%;
+	float:left;
+}
+#texto_calculador{
+	width:39.0625%;
+	float:left;
+	background:url(../imgs/ipad_1024/fondo_texto_calculador.jpg) no-repeat  right;
+	-webkit-background-size:cover; 
+	-moz-background-size:cover; 
+	background-size:cover;
+	padding-top:6%;
+	padding-left:2%;
+	padding-right:2%;
+	padding-bottom:3%;
+}
+#texto_calculador label{
+	font-size:1em;
+}
+#texto_calculador p{
+	font-size:1em;
+	padding-bottom:2em;
+	line-height:1.3;
+}
+/*						PIE						*/
+
+footer{
+	clear:both;
+	background:url(../imgs/ipad_1024/fondo_pleca.png) no-repeat center left #541885;
+	height:8.328125%;
+	margin-bottom:3%;
+	/*height + margin-bottom = 11.328125%*/
+	margin-right:3.125% ;
+	margin-left:4.296875%;
+	width:92.578125%;
+	/* margin right + margin left + width = 100% */
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px; /* future proofing */
+	-khtml-border-radius: 8px; /* for old Konqueror browsers */
+}
+footer #pie_contenedor{
+	height:100%;
+	width:100%;
+	color:#fff;
+}
+footer #pie_contenedor div a, footer #pie_contenedor div p{
+	font-size:0.85em;
+	line-height:1.3;
+	color:#FFF;
+}
+footer #pie_contenedor #benq_sitios_latam{
+	width:33.984375%;
+	padding-left:2.34375%;
+	float:left;
+	padding-top:3%;
+	padding-bottom:1.25%;
+	/*38.775553213909378*/
+}
+footer #pie_contenedor #redes{
+	width:7.586933614330875%;
+	float:left;
+	padding-top:1.25%;
+	padding-bottom:1.25%;
+}
+footer #pie_contenedor #redes img{
+	padding-right:0.316122233930453%;
+	float:left;
+	max-width:100%;
+}
+footer #pie_contenedor #siguenos{
+	width:39.726027397260274%;
+	float:left;
+	padding-top:1.25%;
+	padding-bottom:1.25%;
+}
+footer #pie_contenedor #siguenos a{
+	font-size:.83em;
+}
+footer #pie_contenedor #copyright{
+	width:14.122233930453109%;
+	float:left;
+	padding-top:3%;
+	padding-bottom:1.25%;
+}
+
+footer #pie_contenedor #copyright p{
+		font-size:.83em;
+}
+.clear{
+	clear:both;
+}

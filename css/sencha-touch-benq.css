@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.x-toolbar-dark {
+  background-color: #FFF;
+  background-image: none;
+  border:none;
+}
+.x-toolbar-dark.x-docked-bottom {
+	border-top-color:  black;
+	border-top:none;
+}
+.x-panel{
+	width:100%;
+}
+.x-container{
+	background:none;
+}
+.x-msgbox.x-floating{
+	background-color:#efefef;
+}
+.x-msgbox {
+  min-width: 15em;
+  max-width: 20em;
+  padding: 0.8em;
+  margin: .5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0.1em 0.5em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border: 1px solid #541885;
+}
+.x-msgbox-dark .x-msgbox-text{
+	color:#000;
+	text-shadow:none;
+}
+.x-toolbar-dark .x-title{
+	color:#000;
+	text-shadow:none;
+}
+
+.x-button.x-button-action,.x-button.x-button-action.x-button-back:after,.x-button.x-button-action.x-button-forward:after,.x-toolbar .x-button.x-button-action,.x-toolbar .x-button.x-button-action.x-button-back:after,.x-toolbar .x-button.x-button-action.x-button-forward:after,.x-button.x-button-action-round,.x-button.x-button-action-round.x-button-back:after,.x-button.x-button-action-round.x-button-forward:after,.x-toolbar .x-button.x-button-action-round,.x-toolbar .x-button.x-button-action-round.x-button-back:after,.x-toolbar .x-button.x-button-action-round.x-button-forward:after,.x-button.x-button-action-small,.x-button.x-button-action-small.x-button-back:after,.x-button.x-button-action-small.x-button-forward:after,.x-toolbar .x-button.x-button-action-small,.x-toolbar .x-button.x-button-action-small.x-button-back:after,.x-toolbar .x-button.x-button-action-small.x-button-forward:after {
+	background-color: #006bb6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #50b7ff), color-stop(2%, #0080da), color-stop(100%, #005692));
+	background-image: -webkit-linear-gradient(#50b7ff,#0080da 2%,#005692);
+	background-image: linear-gradient(#50b7ff,#0080da 2%,#005692);
+	width:131px;
+	height:41px;
+	background:url(../imgs/tablet/boton_ver_1.jpg) no-repeat
+}
+
+.x-button.x-button-action.x-button-pressing,.x-button.x-button-action.x-button-pressing:after,.x-button.x-button-action.x-button-pressed,.x-button.x-button-action.x-button-pressed:after,.x-button.x-button-action.x-button-active,.x-button.x-button-action.x-button-active:after,.x-toolbar .x-button.x-button-action.x-button-pressing,.x-toolbar .x-button.x-button-action.x-button-pressing:after,.x-toolbar .x-button.x-button-action.x-button-pressed,.x-toolbar .x-button.x-button-action.x-button-pressed:after,.x-toolbar .x-button.x-button-action.x-button-active,.x-toolbar .x-button.x-button-action.x-button-active:after,.x-button.x-button-action-round.x-button-pressing,.x-button.x-button-action-round.x-button-pressing:after,.x-button.x-button-action-round.x-button-pressed,.x-button.x-button-action-round.x-button-pressed:after,.x-button.x-button-action-round.x-button-active,.x-button.x-button-action-round.x-button-active:after,.x-toolbar .x-button.x-button-action-round.x-button-pressing,.x-toolbar .x-button.x-button-action-round.x-button-pressing:after,.x-toolbar .x-button.x-button-action-round.x-button-pressed,.x-toolbar .x-button.x-button-action-round.x-button-pressed:after,.x-toolbar .x-button.x-button-action-round.x-button-active,.x-toolbar .x-button.x-button-action-round.x-button-active:after,.x-button.x-button-action-small.x-button-pressing,.x-button.x-button-action-small.x-button-pressing:after,.x-button.x-button-action-small.x-button-pressed,.x-button.x-button-action-small.x-button-pressed:after,.x-button.x-button-action-small.x-button-active,.x-button.x-button-action-small.x-button-active:after,.x-toolbar .x-button.x-button-action-small.x-button-pressing,.x-toolbar .x-button.x-button-action-small.x-button-pressing:after,.x-toolbar .x-button.x-button-action-small.x-button-pressed,.x-toolbar .x-button.x-button-action-small.x-button-pressed:after,.x-toolbar .x-button.x-button-action-small.x-button-active,.x-toolbar .x-button.x-button-action-small.x-button-active:after {
+	background-color: #0062a7;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #004474), color-stop(10%, #00538d), color-stop(65%, #0062a7), color-stop(100%, #0064a9));
+	background-image: -webkit-linear-gradient(#004474,#00538d 10%,#0062a7 65%,#0064a9);
+	background-image: linear-gradient(#004474,#00538d 10%,#0062a7 65%,#0064a9);
+	width:131px;
+	height:41px;
+	background:url(../imgs/tablet/boton_ver_1.jpg) no-repeat
+}
